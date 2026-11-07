@@ -1,0 +1,286 @@
+/* ============================================================
+   CORALINE LOVE THEME - SEDA & FURKAN (Ana Tema & Galeri)
+   Demir Kafes Uyumlu - Max 300 Satır
+   ============================================================ */
+:root {
+  --bg-dark: #080711;
+  --bg-card: rgba(18, 16, 32, 0.85);
+  --portal-pink: #e02875;
+  --portal-cyan: #00f3ff;
+  --portal-gold: #ffd700;
+  --text-primary: #f0f0ff;
+  --text-muted: #a6a3c5;
+  --vintage-paper: #f4edd9;
+  --coraline-font-title: 'Cinzel Decorative', serif;
+  --coraline-font-creepy: 'Creepster', cursive;
+  --coraline-font-body: 'Cormorant Garamond', Georgia, serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  font-family: var(--coraline-font-body);
+  font-size: 18px;
+  line-height: 1.6;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Arka Plan Canvas */
+#stars-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Ana Evren Taşıyıcı */
+#main-universe {
+  position: relative;
+  z-index: 2;
+  transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1);
+  min-height: 100vh;
+  padding-bottom: 80px;
+}
+.universe-hidden { display: none; opacity: 0; }
+.universe-visible {
+  display: block;
+  opacity: 1;
+  animation: fadeInUniverse 1.2s ease forwards;
+}
+
+@keyframes fadeInUniverse {
+  from { opacity: 0; transform: scale(0.96); filter: blur(8px); }
+  to { opacity: 1; transform: scale(1); filter: blur(0); }
+}
+
+/* Üst Kontrol Barı (Müzik & Düğme Göz) */
+.floating-bar {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+  display: flex;
+  gap: 12px;
+}
+
+.coraline-btn {
+  background: rgba(14, 12, 28, 0.85);
+  border: 1px solid var(--portal-cyan);
+  color: var(--text-primary);
+  padding: 10px 18px;
+  border-radius: 24px;
+  font-family: var(--coraline-font-title);
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(0, 243, 255, 0.25);
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.coraline-btn:hover {
+  border-color: var(--portal-pink);
+  box-shadow: 0 0 20px rgba(224, 40, 117, 0.45);
+  transform: translateY(-2px);
+}
+.coraline-btn.playing {
+  border-color: var(--portal-gold);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+/* Hero & Başlık */
+.hero-header {
+  text-align: center;
+  padding: 80px 20px 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.site-title {
+  font-family: var(--coraline-font-title);
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  color: #fff;
+  text-shadow: 0 0 20px var(--portal-pink), 0 0 40px var(--portal-cyan);
+  margin-bottom: 8px;
+}
+.site-subtitle {
+  font-style: italic;
+  font-size: 1.35rem;
+  color: var(--text-muted);
+}
+.coraline-quote-box {
+  margin: 25px auto 35px;
+  padding: 16px 24px;
+  border-left: 3px solid var(--portal-pink);
+  border-right: 3px solid var(--portal-cyan);
+  background: rgba(22, 19, 44, 0.4);
+  border-radius: 8px;
+  max-width: 650px;
+}
+#coraline-quote {
+  font-style: italic;
+  font-size: 1.25rem;
+  color: #ffd7e8;
+  transition: opacity 0.5s ease;
+}
+.quote-fade-out { opacity: 0; }
+
+/* Aşk Sayacı */
+.counter-container {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin: 30px 0 40px;
+}
+.counter-box {
+  background: radial-gradient(circle at center, rgba(30, 25, 55, 0.9), rgba(12, 10, 24, 0.95));
+  border: 1px solid rgba(0, 243, 255, 0.3);
+  box-shadow: inset 0 0 15px rgba(0, 243, 255, 0.15), 0 8px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  padding: 16px 20px;
+  min-width: 90px;
+  text-align: center;
+}
+.counter-number {
+  font-family: var(--coraline-font-title);
+  font-size: 2.2rem;
+  color: var(--portal-cyan);
+  text-shadow: 0 0 15px var(--portal-cyan);
+}
+.counter-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+/* Galeri Bölümü */
+.memories-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+}
+.filter-bar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 45px;
+}
+.filter-chip {
+  background: rgba(24, 21, 46, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: var(--text-muted);
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-height: 44px;
+}
+.filter-chip.active, .filter-chip:hover {
+  color: #fff;
+  border-color: var(--portal-pink);
+  background: rgba(224, 40, 117, 0.25);
+  box-shadow: 0 0 15px rgba(224, 40, 117, 0.35);
+}
+
+/* Polaroid Grid */
+.polaroid-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 36px;
+  position: relative;
+  z-index: 10;
+}
+
+/* Polaroid Kart */
+.polaroid-card {
+  background: #fbfbf9;
+  padding: 16px 16px 24px;
+  border-radius: 3px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), 0 0 20px rgba(0, 243, 255, 0.1);
+  cursor: pointer;
+  transform: rotate(var(--card-tilt, 0deg));
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease;
+  position: relative;
+  overflow: visible;
+}
+.polaroid-card:hover {
+  transform: scale(1.05) rotate(0deg) !important;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.85), 0 0 30px rgba(224, 40, 117, 0.5);
+  z-index: 25;
+}
+.polaroid-pin {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 12;
+}
+.button-pin {
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #ffd700, #b28900);
+  border: 2px solid #5a4500;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+}
+.polaroid-image-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: #000;
+  border-radius: 2px;
+}
+.polaroid-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.4s ease;
+}
+.polaroid-caption {
+  margin-top: 14px;
+  text-align: center;
+  color: #1a162b;
+}
+.polaroid-title {
+  font-family: var(--coraline-font-title);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #121020;
+}
+.polaroid-date {
+  font-size: 0.85rem;
+  color: #635f79;
+  margin-top: 4px;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+  .floating-bar {
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    justify-content: center;
+  }
+  .polaroid-grid { gap: 24px; }
+  .counter-box { padding: 10px 14px; min-width: 72px; }
+  .counter-number { font-size: 1.7rem; }
+}

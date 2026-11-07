@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seda & Furkan | Bizim Gizli Dünyamız</title>
+  
+  <!-- Coraline Yazı Tipleri -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Creepster&display=swap" rel="stylesheet" />
+
+  <!-- Modüler Coraline Stilleri -->
+  <link rel="stylesheet" href="css/coraline.css" />
+  <link rel="stylesheet" href="css/portal.css" />
+  <link rel="stylesheet" href="css/modal.css" />
+</head>
+<body>
+
+  <!-- Yıldızlar ve Ateşböcekleri Canvas Motoru -->
+  <canvas id="stars-canvas"></canvas>
+
+  <!-- GİZLİ KAPI AÇILIŞ EKRANI -->
+  <section id="portal-overlay" aria-label="Pembe Saray Gizli Kapısı">
+    <div class="portal-title-box">
+      <h1 class="portal-welcome">Pink Palace Gizli Kapısı</h1>
+      <p id="key-hint" class="portal-hint">🗝️ Altın Düğme Anahtara Dokun ve Kapıyı Aç</p>
+    </div>
+
+    <!-- Asılı Düğme Anahtar (SVG) -->
+    <div id="button-key" class="button-key-container" role="button" tabindex="0" aria-label="Gizli Kapı Anahtarı">
+      <div class="button-key">
+        <svg width="60" height="90" viewBox="0 0 60 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Asma İpi -->
+          <line x1="30" y1="0" x2="30" y2="20" stroke="#ffd700" stroke-width="2" stroke-dasharray="2 2" />
+          <!-- Altın Coraline Düğmesi -->
+          <circle cx="30" cy="35" r="16" fill="url(#goldGrad)" stroke="#5a4500" stroke-width="2" />
+          <circle cx="25" cy="31" r="2.5" fill="#2b1a00" />
+          <circle cx="35" cy="31" r="2.5" fill="#2b1a00" />
+          <circle cx="25" cy="39" r="2.5" fill="#2b1a00" />
+          <circle cx="35" cy="39" r="2.5" fill="#2b1a00" />
+          <!-- Anahtar Gövdesi ve Dişleri -->
+          <path d="M28 50 L28 85 L32 85 L32 50 Z" fill="#ffd700" stroke="#5a4500" stroke-width="1.5" />
+          <path d="M32 72 L42 72 L42 76 L32 76 Z" fill="#ffd700" stroke="#5a4500" stroke-width="1.5" />
+          <path d="M32 80 L40 80 L40 84 L32 84 Z" fill="#ffd700" stroke="#5a4500" stroke-width="1.5" />
+          <defs>
+            <radialGradient id="goldGrad" cx="30%" cy="30%" r="70%">
+              <stop offset="0%" stop-color="#fff2a3" />
+              <stop offset="70%" stop-color="#ffd700" />
+              <stop offset="100%" stop-color="#9e7c00" />
+            </radialGradient>
+          </defs>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Vintage Ahşap Kapı & Vortex Tüneli -->
+    <div class="door-frame">
+      <div id="vortex-tunnel" class="vortex-tunnel"></div>
+      <div id="vintage-door" class="vintage-door" role="button" aria-label="Küçük Gizli Kapı">
+        <div class="keyhole"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ANA AŞK EVRENİ (OTHER WORLD) -->
+  <main id="main-universe" class="universe-hidden">
+    <!-- Üst Kontrol Barı -->
+    <header class="floating-bar">
+      <button id="music-toggle-btn" class="coraline-btn" aria-label="Müziği Çal">
+        <span class="music-icon">🎵</span>
+        <span class="music-status-text">Coraline Ninni</span>
+      </button>
+
+      <button id="button-eyes-toggle" class="coraline-btn" aria-label="Düğme Göz Modu">
+        <span class="btn-label">👁️ Düğme Göz Modu</span>
+      </button>
+
+      <button id="return-door-btn" class="coraline-btn" aria-label="Gizli Kapıya Dön">
+        <span>🚪 Kapıya Dön</span>
+      </button>
+    </header>
+
+    <!-- Başlık & Aşk Sayacı Bölümü -->
+    <section class="hero-header">
+      <h1 class="site-title">Seda &amp; Furkan</h1>
+      <p class="site-subtitle">Bizim Gizli Dünyamız • Our Other World</p>
+
+      <div class="coraline-quote-box">
+        <p id="coraline-quote">"Seninle geçirdiğimiz her an, sonsuzluğa atılan sımsıkı bir düğüm..."</p>
+      </div>
+
+      <!-- Canlı Aşk Sayacı -->
+      <div class="counter-container" aria-label="Birliktelik Sayacı">
+        <div class="counter-box">
+          <div id="count-days" class="counter-number">00</div>
+          <div class="counter-label">Gün</div>
+        </div>
+        <div class="counter-box">
+          <div id="count-hours" class="counter-number">00</div>
+          <div class="counter-label">Saat</div>
+        </div>
+        <div class="counter-box">
+          <div id="count-minutes" class="counter-number">00</div>
+          <div class="counter-label">Dakika</div>
+        </div>
+        <div class="counter-box">
+          <div id="count-seconds" class="counter-number">00</div>
+          <div class="counter-label">Saniye</div>
+        </div>
+      </div>
+
+      <a href="#memories-section" id="explore-memories-btn" class="coraline-btn" style="margin-top: 10px;">
+        ✨ Hatıralarımıza Dokun
+      </a>
+    </section>
+
+    <!-- İnteraktif Galeri & Polaroidler -->
+    <section id="memories-section" class="memories-container">
+      <!-- Filtre Çipleri -->
+      <nav class="filter-bar" aria-label="Anı Kategorileri">
+        <button class="filter-chip active" data-category="all">✨ Bütün Anlar (39)</button>
+        <button class="filter-chip" data-category="first-dates">🗝️ İlk Kıvılcımlar</button>
+        <button class="filter-chip" data-category="sweet-moments">🌸 Tatlı Anlarımız</button>
+        <button class="filter-chip" data-category="adventures">🌿 Maceralarımız</button>
+        <button class="filter-chip" data-category="magical-nights">🌙 Büyülü Geceler</button>
+      </nav>
+
+      <!-- İğne ve İplik SVG Katmanı -->
+      <svg id="thread-svg" aria-hidden="true"></svg>
+
+      <!-- Polaroid Kart Gridi -->
+      <div id="gallery-grid" class="polaroid-grid">
+        <!-- JavaScript ile dinamik render edilecek -->
+      </div>
+    </section>
+  </main>
+
+  <!-- FOTOĞRAF TIKLAMA MODALI -->
+  <dialog id="memory-modal" class="modal-overlay" aria-label="Anı Detayı">
+    <div class="modal-wrapper">
+      <button id="modal-close-btn" class="modal-close-corner" aria-label="Kapat">&times;</button>
+      
+      <div class="modal-media">
+        <img id="modal-img" src="" alt="Anı Fotoğrafı" />
+      </div>
+
+      <div class="modal-content-info">
+        <div>
+          <h2 id="modal-title" class="modal-title">Anı Başlığı</h2>
+          <div class="modal-meta-chips">
+            <span id="modal-date" class="meta-chip">Tarih</span>
+            <span id="modal-location" class="meta-chip">Konum</span>
+          </div>
+          <div class="modal-love-letter">
+            <p id="modal-note">"Furkan'dan Seda'ya aşk notu..."</p>
+          </div>
+        </div>
+
+        <div class="modal-nav-bar">
+          <button id="modal-prev-btn" class="modal-btn" aria-label="Önceki Anı">← Önceki</button>
+          <button id="modal-next-btn" class="modal-btn" aria-label="Sonraki Anı">Sonraki →</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Modüler Scriptler -->
+  <script src="js/audio.js"></script>
+  <script src="js/stars.js"></script>
+  <script src="js/portal.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
