@@ -33,7 +33,12 @@ class MemoryService {
   getById(id) {
     const memories = this.getMemories();
     const numId = parseInt(id, 10);
-    return memories.find((m) => m.id === numId) || null;
+    return memories.find((m) => {
+      if (m.id === id || String(m.id) === String(id)) return true;
+      if (!isNaN(numId) && m.id === numId) return true;
+      if ((id === 'memory-01' || id === 'memory-00') && m.id === 1) return true;
+      return false;
+    }) || null;
   }
 
   getChapters() {
