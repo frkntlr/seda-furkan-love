@@ -118,7 +118,17 @@ body {
 #coraline-quote { font-style: italic; font-size: 1.2rem; color: #ffd7e8; transition: opacity 0.5s ease; }
 .quote-fade-out { opacity: 0; }
 
-.counter-container { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; margin: 25px 0 30px; }
+.counter-heading {
+  font-family: var(--coraline-font-title);
+  font-size: clamp(1.05rem, 2.5vw, 1.45rem);
+  color: var(--portal-gold);
+  text-shadow: 0 0 14px rgba(255, 215, 0, 0.65);
+  margin-top: 15px;
+  margin-bottom: 6px;
+  letter-spacing: 1px;
+}
+
+.counter-container { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; margin: 15px 0 30px; }
 .counter-box {
   background: radial-gradient(circle at center, rgba(30, 25, 55, 0.9), rgba(12, 10, 24, 0.95));
   border: 1px solid rgba(0, 243, 255, 0.3);

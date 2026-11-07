@@ -74,6 +74,24 @@
   background: #080711;
 }
 
+/* OpenStreetMap Coraline Gece Mavisi & Mistik Koyu Tema Filtresi */
+#coraline-map .leaflet-tile-pane {
+  filter: brightness(0.62) invert(1) contrast(1.15) hue-rotate(200deg) saturate(0.4);
+}
+
+.leaflet-container .leaflet-control-attribution {
+  background: rgba(14, 12, 28, 0.75) !important;
+  color: var(--text-muted) !important;
+  font-size: 11px;
+  border-top-left-radius: 6px;
+  padding: 2px 8px !important;
+}
+
+.leaflet-container .leaflet-control-attribution a {
+  color: var(--portal-cyan) !important;
+  text-decoration: none;
+}
+
 /* Coraline Düğme Harita Pini */
 .map-button-pin {
   width: 28px;

@@ -1,6 +1,6 @@
 /**
  * Coraline Gizli Kapı, 360 Anahtar & Vortex Tüneli Kontrolcüsü
- * Pink Palace vintage kapısı, düğme anahtar ve Other World geçişi
+ * Seda & Furkan'ın kalbine açılan kapı, düğme anahtar ve Other World geçişi
  * Demir Kafes: <300 satır, fonksiyonlar <40 satır
  */
 
@@ -46,7 +46,7 @@ class CoralinePortal {
     // 360 derece dönerek deliğe girme animasyonu
     this.keyElement.classList.add('key-inserting');
     if (this.keyHint) {
-      this.keyHint.textContent = "Kapı aralanıyor... Diğer Dünyaya geçiliyor!";
+      this.keyHint.textContent = "Kapı aralanıyor... Kalbimize hoş geldin Seda'm! ✨";
     }
 
     setTimeout(() => {
@@ -91,7 +91,7 @@ class CoralinePortal {
     this.keyElement.classList.remove('key-inserting');
 
     if (this.keyHint) {
-      this.keyHint.textContent = "Düğme Anahtara Dokun ve Kapıyı Aç";
+      this.keyHint.textContent = "🗝️ Kalbimizin Anahtarını Çevir";
     }
   }
 }
