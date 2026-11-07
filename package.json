@@ -1,0 +1,22 @@
+{
+  "name": "seda-furkan-love",
+  "version": "1.0.0",
+  "description": "<div align=\"center\">",
+  "main": "server.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "extract": "python scripts/extract_metadata.py",
+    "test": "node test/api-test.js && node test/http-test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.3.0"
+  }
+}

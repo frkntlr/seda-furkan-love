@@ -1,0 +1,55 @@
+{
+  "planId": "tw-mw677syc",
+  "objective": "Seda ve Furkan Coraline Ask Sitesi",
+  "activeWave": 1,
+  "agents": {
+    "issue-solver [Seda]": {
+      "agentId": "issue-solver [Seda]",
+      "role": "solver",
+      "subagentName": "issue-solver [Seda]",
+      "status": "pending",
+      "currentActivity": "Wave 1",
+      "lockedFiles": [
+        ".aegis/task-inbox.json"
+      ],
+      "modifiedFiles": [],
+      "publishedContracts": [],
+      "updatedAt": "2026-11-07T09:26:03.360Z",
+      "phase": 1
+    },
+    "issue-solver [Furkan]": {
+      "agentId": "issue-solver [Furkan]",
+      "role": "solver",
+      "subagentName": "issue-solver [Furkan]",
+      "status": "pending",
+      "currentActivity": "Wave 1",
+      "lockedFiles": [],
+      "modifiedFiles": [],
+      "publishedContracts": [],
+      "updatedAt": "2026-11-07T09:26:03.360Z",
+      "phase": 1
+    },
+    "qa-hunter [Audit]": {
+      "agentId": "qa-hunter [Audit]",
+      "role": "qa",
+      "subagentName": "qa-hunter [Audit]",
+      "status": "pending",
+      "currentActivity": "Wave 2",
+      "lockedFiles": [],
+      "modifiedFiles": [],
+      "publishedContracts": [],
+      "updatedAt": "2026-11-07T09:26:03.360Z",
+      "phase": 2
+    }
+  },
+  "events": [
+    {
+      "id": "evt-init-mw677syo",
+      "timestamp": "2026-11-07T09:26:03.360Z",
+      "fromAgent": "coordinator",
+      "type": "milestone",
+      "message": "Mesh initialized for tw-mw677syc: \"Seda ve Furkan Coraline Ask Sitesi\""
+    }
+  ],
+  "lastUpdated": "2026-11-07T09:26:03.360Z"
+}
