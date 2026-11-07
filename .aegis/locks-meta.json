@@ -1,6 +1,10 @@
 {
   ".aegis/task-inbox.json": {
-    "acquiredAt": 1794043563355,
-    "pid": 20932
+    "acquiredAt": 1794045070382,
+    "pid": 2536
+  },
+  "docs/SEDA_VE_FURKAN_ASK_MANIFESTOSU.md": {
+    "acquiredAt": 1794045070382,
+    "pid": 2536
   }
 }

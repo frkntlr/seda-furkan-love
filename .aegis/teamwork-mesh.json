@@ -1,12 +1,36 @@
 {
-  "planId": "tw-mw677syc",
-  "objective": "Seda ve Furkan Coraline Ask Sitesi",
+  "planId": "tw-mw6843s8",
+  "objective": "Dugme Gozler Hizalama, Coraline Animasyonlari, Ask Haritasi ve Ucretsiz CDN Yayini",
   "activeWave": 1,
   "agents": {
-    "issue-solver [Seda]": {
-      "agentId": "issue-solver [Seda]",
+    "issue-solver [Dugme]": {
+      "agentId": "issue-solver [Dugme]",
       "role": "solver",
-      "subagentName": "issue-solver [Seda]",
+      "subagentName": "issue-solver [Dugme]",
+      "status": "pending",
+      "currentActivity": "Wave 1",
+      "lockedFiles": [],
+      "modifiedFiles": [],
+      "publishedContracts": [],
+      "updatedAt": "2026-11-07T09:51:10.385Z",
+      "phase": 1
+    },
+    "issue-solver [Coraline]": {
+      "agentId": "issue-solver [Coraline]",
+      "role": "solver",
+      "subagentName": "issue-solver [Coraline]",
+      "status": "pending",
+      "currentActivity": "Wave 1",
+      "lockedFiles": [],
+      "modifiedFiles": [],
+      "publishedContracts": [],
+      "updatedAt": "2026-11-07T09:51:10.385Z",
+      "phase": 1
+    },
+    "issue-solver [Ask]": {
+      "agentId": "issue-solver [Ask]",
+      "role": "solver",
+      "subagentName": "issue-solver [Ask]",
       "status": "pending",
       "currentActivity": "Wave 1",
       "lockedFiles": [
@@ -14,20 +38,22 @@
       ],
       "modifiedFiles": [],
       "publishedContracts": [],
-      "updatedAt": "2026-11-07T09:26:03.360Z",
+      "updatedAt": "2026-11-07T09:51:10.385Z",
       "phase": 1
     },
-    "issue-solver [Furkan]": {
-      "agentId": "issue-solver [Furkan]",
-      "role": "solver",
-      "subagentName": "issue-solver [Furkan]",
+    "doc-architect [Docs]": {
+      "agentId": "doc-architect [Docs]",
+      "role": "docs",
+      "subagentName": "doc-architect [Docs]",
       "status": "pending",
-      "currentActivity": "Wave 1",
-      "lockedFiles": [],
+      "currentActivity": "Wave 3",
+      "lockedFiles": [
+        "docs/SEDA_VE_FURKAN_ASK_MANIFESTOSU.md"
+      ],
       "modifiedFiles": [],
       "publishedContracts": [],
-      "updatedAt": "2026-11-07T09:26:03.360Z",
-      "phase": 1
+      "updatedAt": "2026-11-07T09:51:10.385Z",
+      "phase": 3
     },
     "qa-hunter [Audit]": {
       "agentId": "qa-hunter [Audit]",
@@ -38,18 +64,18 @@
       "lockedFiles": [],
       "modifiedFiles": [],
       "publishedContracts": [],
-      "updatedAt": "2026-11-07T09:26:03.360Z",
+      "updatedAt": "2026-11-07T09:51:10.385Z",
       "phase": 2
     }
   },
   "events": [
     {
-      "id": "evt-init-mw677syo",
-      "timestamp": "2026-11-07T09:26:03.360Z",
+      "id": "evt-init-mw6843sh",
+      "timestamp": "2026-11-07T09:51:10.385Z",
       "fromAgent": "coordinator",
       "type": "milestone",
-      "message": "Mesh initialized for tw-mw677syc: \"Seda ve Furkan Coraline Ask Sitesi\""
+      "message": "Mesh initialized for tw-mw6843s8: \"Dugme Gozler Hizalama, Coraline Animasyonlari, Ask Haritasi \""
     }
   ],
-  "lastUpdated": "2026-11-07T09:26:03.360Z"
+  "lastUpdated": "2026-11-07T09:51:10.385Z"
 }

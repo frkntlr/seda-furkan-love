@@ -1,41 +1,1445 @@
 [
-  {"id": 1, "filename": "images/memory-01.jpg", "image": "images/memory-01.jpg", "originalFilename": "IMG_20250325_203007102.jpg", "date": "25 Mart 2025", "rawDate": "2025:03:25 20:30:08", "location": "Kadıköy", "title": "Gizli Kapının İlk Açılışı", "caption": "Seda'm, gözlerine ilk baktığım o an, Coraline'in küçük kapıdan bambaşka bir dünyaya adım atması gibiydi. Kalbimin gizli kapısı o gece sonsuza dek sana açıldı.", "note": "Seda'm, gözlerine ilk baktığım o an, Coraline'in küçük kapıdan bambaşka bir dünyaya adım atması gibiydi. Kalbimin gizli kapısı o gece sonsuza dek sana açıldı.", "coraline_chapter": "Kapının Anahtarı", "category": "first-dates", "device": "Nothing A063", "gps": null, "width": 3456, "height": 4608},
-  {"id": 2, "filename": "images/memory-02.jpg", "image": "images/memory-02.jpg", "originalFilename": "IMG_20250325_223309932.jpg", "date": "25 Mart 2025", "rawDate": "2025:03:25 22:33:11", "location": "Moda Sahili", "title": "Gecenin Büyülü Işıltısı", "caption": "İlk gecemizin tatlı serinliğinde elini tutarken zaman dondu sanki. Dünya sustu, sadece bizim fısıltılarımız kaldı.", "note": "İlk gecemizin tatlı serinliğinde elini tutarken zaman dondu sanki. Dünya sustu, sadece bizim fısıltılarımız kaldı.", "coraline_chapter": "Kapının Anahtarı", "category": "first-dates", "device": "Nothing A063", "gps": null, "width": 3456, "height": 4608},
-  {"id": 3, "filename": "images/memory-03.jpg", "image": "images/memory-03.jpg", "originalFilename": "IMG_20250405_181907118.jpg", "date": "5 Nisan 2025", "rawDate": "2025:04:05 18:19:07", "location": "Fenerbahçe Parkı", "title": "Nisan Esintisi & Gülüşün", "caption": "Gülüşün Pembe Saray'ın kasvetli havasını dağıtan güneş gibi. Ne zaman gülsen içimde binlerce mavi ateşböceği havalanıyor.", "note": "Gülüşün Pembe Saray'ın kasvetli havasını dağıtan güneş gibi. Ne zaman gülsen içimde binlerce mavi ateşböceği havalanıyor.", "coraline_chapter": "Kapının Anahtarı", "category": "sweet-moments", "device": "Nothing A063", "gps": null, "width": 3072, "height": 4096},
-  {"id": 4, "filename": "images/memory-04.jpg", "image": "images/memory-04.jpg", "originalFilename": "IMG_20250405_182236255.jpg", "date": "5 Nisan 2025", "rawDate": "2025:04:05 18:22:37", "location": "Kalamış Marina", "title": "Birlikte Adım Adım", "caption": "Seninle yürümek, dönen mor bir tünelden masallar diyarına geçmek gibi. Yol nereye giderse gitsin, yanımda sen varsan orası cennet.", "note": "Seninle yürümek, dönen mor bir tünelden masallar diyarına geçmek gibi. Yol nereye giderse gitsin, yanımda sen varsan orası cennet.", "coraline_chapter": "Kapının Anahtarı", "category": "adventures", "device": "Nothing A063", "gps": null, "width": 4096, "height": 3072},
-  {"id": 5, "filename": "images/memory-05.jpg", "image": "images/memory-05.jpg", "originalFilename": "IMG_20250406_131434363.jpg", "date": "6 Nisan 2025", "rawDate": "2025:04:06 13:14:34", "location": "Moda", "title": "Pazar Kahvesi ve Gözlerin", "caption": "Bana bakan o güzel gözlerinde kaybolmamak imkansız. Coraline'in aradığı tüm büyüler senin bir tek bakışında saklı sevgilim.", "note": "Bana bakan o güzel gözlerinde kaybolmamak imkansız. Coraline'in aradığı tüm büyüler senin bir tek bakışında saklı sevgilim.", "coraline_chapter": "Kapının Anahtarı", "category": "sweet-moments", "device": "Nothing A063", "gps": null, "width": 3072, "height": 4096},
-  {"id": 6, "filename": "images/memory-06.jpg", "image": "images/memory-06.jpg", "originalFilename": "IMG_20250406_192646645.jpg", "date": "6 Nisan 2025", "rawDate": "2025:04:06 19:26:48", "location": "Bostancı İskelesi", "title": "Akşam Kızıllığı", "caption": "Gün batımı gökyüzünü lacivertle pembeye boyarken, seninle paylaştığım her anın bir rüya olmadığını fısıldıyordu rüzgar.", "note": "Gün batımı gökyüzünü lacivertle pembeye boyarken, seninle paylaştığım her anın bir rüya olmadığını fısıldıyordu rüzgar.", "coraline_chapter": "Kapının Anahtarı", "category": "magical-nights", "device": "Nothing A063", "gps": null, "width": 3456, "height": 4608},
-  {"id": 7, "filename": "images/memory-07.jpg", "image": "images/memory-07.jpg", "originalFilename": "IMG_20250406_203032009.jpg", "date": "6 Nisan 2025", "rawDate": "2025:04:06 20:30:32", "location": "Bağdat Caddesi", "title": "Yıldızların Altında İki Kalp", "caption": "Işıklar tek tek sönerken bile senin gözlerindeki ışıltı bütün karanlıkları aydınlatmaya yetti canım Seda'm.", "note": "Işıklar tek tek sönerken bile senin gözlerindeki ışıltı bütün karanlıkları aydınlatmaya yetti canım Seda'm.", "coraline_chapter": "Kapının Anahtarı", "category": "magical-nights", "device": "Nothing A063", "gps": null, "width": 3072, "height": 4096},
-  {"id": 8, "filename": "images/memory-08.jpg", "image": "images/memory-08.jpg", "originalFilename": "IMG_20250413_170537828.jpg", "date": "13 Nisan 2025", "rawDate": "2025:04:13 17:05:39", "location": "Emirgan Korusu", "title": "Baharın En Güzel Çiçeği", "caption": "Bahçedeki laleler bile senin zarafetinin yanında boyun eğdi. Sen benim bu dünyadaki en kıymetli mucizemsin.", "note": "Bahçedeki laleler bile senin zarafetinin yanında boyun eğdi. Sen benim bu dünyadaki en kıymetli mucizemsin.", "coraline_chapter": "Öteki Dünyanın Yıldızları", "category": "sweet-moments", "device": "Nothing A063", "gps": null, "width": 4608, "height": 3456},
-  {"id": 9, "filename": "images/memory-09.jpg", "image": "images/memory-09.jpg", "originalFilename": "IMG_20250413_170557203.jpg", "date": "13 Nisan 2025", "rawDate": "2025:04:13 17:05:59", "location": "Emirgan", "title": "Masumiyetin Zirvesi", "caption": "Kameraya hafifçe kaçamak bakışın... Her defasında kalbimin ritmini değiştirmeyi nasıl başarıyorsun sevgilim?", "note": "Kameraya hafifçe kaçamak bakışın... Her defasında kalbimin ritmini değiştirmeyi nasıl başarıyorsun sevgilim?", "coraline_chapter": "Öteki Dünyanın Yıldızları", "category": "sweet-moments", "device": "Nothing A063", "gps": null, "width": 4608, "height": 3456},
-  {"id": 10, "filename": "images/memory-10.jpg", "image": "images/memory-10.jpg", "originalFilename": "IMG_20250423_174752775.jpg", "date": "23 Nisan 2025", "rawDate": "2025:04:23 17:47:53", "location": "Bebek Parkı", "title": "Çocuksu Sevinçlerimiz", "caption": "Seninle içimdeki çocuk yeniden doğdu. Hayatın tüm gri rengini silip bizi rengarenk boyadın.", "note": "Seninle içimdeki çocuk yeniden doğdu. Hayatın tüm gri rengini silip bizi rengarenk boyadın.", "coraline_chapter": "Öteki Dünyanın Yıldızları", "category": "adventures", "device": "Nothing A063", "gps": null, "width": 4608, "height": 3456},
-  {"id": 11, "filename": "images/memory-11.jpg", "image": "images/memory-11.jpg", "originalFilename": "IMG_20250423_174810812.jpg", "date": "23 Nisan 2025", "rawDate": "2025:04:23 17:48:11", "location": "Boğaz Kıyısı", "title": "Huzurun Fotoğrafı", "caption": "Başını omzuma yasladığında dünyadaki tüm telaşlar son buluyor. İşte tam o an evimde olduğumu hissediyorum.", "note": "Başını omzuma yasladığında dünyadaki tüm telaşlar son buluyor. İşte tam o an evimde olduğumu hissediyorum.", "coraline_chapter": "Öteki Dünyanın Yıldızları", "category": "sweet-moments", "device": "Nothing A063", "gps": null, "width": 4608, "height": 3456},
-  {"id": 12, "filename": "images/memory-12.jpg", "image": "images/memory-12.jpg", "originalFilename": "IMG_20250423_212620181.jpg", "date": "23 Nisan 2025", "rawDate": "2025:04:23 21:26:21", "location": "Karaköy", "title": "Gece Mavisi Hatıralar", "caption": "Işıklı sokaklar ve senin sıcacık elin. Coraline Other World'de bile bundan daha kusursuz bir an yaratamazdı.", "note": "Işıklı sokaklar ve senin sıcacık elin. Coraline Other World'de bile bundan daha kusursuz bir an yaratamazdı.", "coraline_chapter": "Öteki Dünyanın Yıldızları", "category": "magical-nights", "device": "Nothing A063", "gps": null, "width": 4608, "height": 3456},
-  {"id": 13, "filename": "images/memory-13.jpg", "image": "images/memory-13.jpg", "originalFilename": "IMG_20250426_160258314.jpg", "date": "26 Nisan 2025", "rawDate": "2025:04:26 16:02:59", "location": "Beşiktaş", "title": "Kahkahaların Yankısı", "caption": "Birlikte attığımız her kahkaha, geleceğimize atılan sımsıkı ve parıltılı bir düğüm gibi kalbime işleniyor.", "note": "Birlikte attığımız her kahkaha, geleceğimize atılan sımsıkı ve parıltılı bir düğüm gibi kalbime işleniyor.", "coraline_chapter": "Öteki Dünyanın Yıldızları", "category": "adventures", "device": "Nothing A063", "gps": null, "width": 4096, "height": 3072},
-  {"id": 14, "filename": "images/memory-14.jpg", "image": "images/memory-14.jpg", "originalFilename": "IMG_20250426_185611256.jpg", "date": "26 Nisan 2025", "rawDate": "2025:04:26 18:56:11", "location": "Ortaköy", "title": "Göz Göze Sessizlik", "caption": "Hiçbir kelimeye ihtiyaç duymadan sadece bakışarak anlaştığımız o eşsiz an... Ruh ikizim olduğunu biliyorum.", "note": "Hiçbir kelimeye ihtiyaç duymadan sadece bakışarak anlaştığımız o eşsiz an... Ruh ikizim olduğunu biliyorum.", "coraline_chapter": "Öteki Dünyanın Yıldızları", "category": "sweet-moments", "device": "Nothing A063", "gps": null, "width": 8160, "height": 6144},
-  {"id": 15, "filename": "images/memory-15.jpg", "image": "images/memory-15.jpg", "originalFilename": "IMG_20250426_203434833.jpg", "date": "26 Nisan 2025", "rawDate": "2025:04:26 20:34:42", "location": "Galata", "title": "Büyülü Akşam Yemeği", "caption": "Galata Kulesi'nin gölgesinde, masamızdaki mum ışığı senin gözlerindeki ışıltıya yenik düştü sevgilim.", "note": "Galata Kulesi'nin gölgesinde, masamızdaki mum ışığı senin gözlerindeki ışıltıya yenik düştü sevgilim.", "coraline_chapter": "Öteki Dünyanın Yıldızları", "category": "magical-nights", "device": "Nothing A063", "gps": null, "width": 6144, "height": 8192},
-  {"id": 16, "filename": "images/memory-16.jpg", "image": "images/memory-16.jpg", "originalFilename": "IMG_20250503_170822745.jpg", "date": "3 Mayıs 2025", "rawDate": "2025:05:03 17:08:23", "location": "Caddebostan", "title": "Mayıs Şarkımız", "caption": "Çimlere uzanıp gökyüzüne baktığımız gün, Coraline ninni melodisi gibi tatlı bir huzur sardı her yanımızı.", "note": "Çimlere uzanıp gökyüzüne baktığımız gün, Coraline ninni melodisi gibi tatlı bir huzur sardı her yanımızı.", "coraline_chapter": "Düğme Gözlerin Büyüsü", "category": "sweet-moments", "device": "Nothing A063", "gps": null, "width": 4608, "height": 3456},
-  {"id": 17, "filename": "images/memory-17.jpg", "image": "images/memory-17.jpg", "originalFilename": "IMG_20250503_170917771.jpg", "date": "3 Mayıs 2025", "rawDate": "2025:05:03 17:09:18", "location": "Caddebostan Sahil", "title": "Rüzgarla Dans Eden Saçların", "caption": "Saçların rüzgarda dalgalanırken bir kez daha anladım: Benim bütün dünyam ve kaderim senin yanında olmak.", "note": "Saçların rüzgarda dalgalanırken bir kez daha anladım: Benim bütün dünyam ve kaderim senin yanında olmak.", "coraline_chapter": "Düğme Gözlerin Büyüsü", "category": "sweet-moments", "device": "Nothing A063", "gps": null, "width": 4608, "height": 3456},
-  {"id": 18, "filename": "images/memory-18.jpg", "image": "images/memory-18.jpg", "originalFilename": "IMG_20250608_135046339.jpg", "date": "8 Haziran 2025", "rawDate": "2025:06:08 13:50:46", "location": "Heybeliada", "title": "Haziran Güneşi", "caption": "Ada sokaklarında el ele kaybolmak, bisiklet zilleri ve senin o paha biçilmez kahkahan.", "note": "Ada sokaklarında el ele kaybolmak, bisiklet zilleri ve senin o paha biçilmez kahkahan.", "coraline_chapter": "Düğme Gözlerin Büyüsü", "category": "adventures", "device": "Nothing A063", "gps": null, "width": 4608, "height": 3456},
-  {"id": 19, "filename": "images/memory-19.jpg", "image": "images/memory-19.jpg", "originalFilename": "IMG_20250608_170046688.jpg", "date": "8 Haziran 2025", "rawDate": "2025:06:08 17:00:46", "location": "Büyükada", "title": "Deniz Kokusu & Aşk", "caption": "Denizin mavisi senin güzelliğinle birleşince ortaya çıkan tabloyu hiçbir ressam tuvale dökemez Seda'm.", "note": "Denizin mavisi senin güzelliğinle birleşince ortaya çıkan tabloyu hiçbir ressam tuvale dökemez Seda'm.", "coraline_chapter": "Düğme Gözlerin Büyüsü", "category": "sweet-moments", "device": "Nothing A063", "gps": null, "width": 3072, "height": 4096},
-  {"id": 20, "filename": "images/memory-20.jpg", "image": "images/memory-20.jpg", "originalFilename": "IMG_20250608_194543190.jpg", "date": "8 Haziran 2025", "rawDate": "2025:06:08 19:45:43", "location": "Marmara Denizi", "title": "Vapurda İki Çay, Bir Ömür", "caption": "Martıların eşlik ettiği vapur yolculuğumuzda çayımızı yudumlarken sonsuza dek bu anı yaşamak istedim.", "note": "Martıların eşlik ettiği vapur yolculuğumuzda çayımızı yudumlarken sonsuza dek bu anı yaşamak istedim.", "coraline_chapter": "Düğme Gözlerin Büyüsü", "category": "first-dates", "device": "Nothing A063", "gps": null, "width": 4608, "height": 3456},
-  {"id": 21, "filename": "images/memory-21.jpg", "image": "images/memory-21.jpg", "originalFilename": "IMG_20250608_194555105.jpg", "date": "8 Haziran 2025", "rawDate": "2025:06:08 19:45:55", "location": "Adalar Vapuru", "title": "Sonsuz Dalgalar", "caption": "Gözlerinde deniz, yüreğinde koskoca bir sevgi... İyi ki varsın bir tanem.", "note": "Gözlerinde deniz, yüreğinde koskoca bir sevgi... İyi ki varsın bir tanem.", "coraline_chapter": "Düğme Gözlerin Büyüsü", "category": "sweet-moments", "device": "Nothing A063", "gps": null, "width": 4608, "height": 3456},
-  {"id": 22, "filename": "images/memory-22.jpg", "image": "images/memory-22.jpg", "originalFilename": "IMG_20250614_182500918.jpg", "date": "14 Haziran 2025", "rawDate": "2025:06:14 18:25:01", "location": "Kuzguncuk", "title": "Yaz Başlangıcı Tutkumuz", "caption": "Rengarenk ahşap evlerin arasında gezinirken sanki Pembe Saray'ın sevimli sokağında gibiydik.", "note": "Rengarenk ahşap evlerin arasında gezinirken sanki Pembe Saray'ın sevimli sokağında gibiydik.", "coraline_chapter": "Düğme Gözlerin Büyüsü", "category": "adventures", "device": "Nothing A063", "gps": null, "width": 4608, "height": 3456},
-  {"id": 23, "filename": "images/memory-23.jpg", "image": "images/memory-23.jpg", "originalFilename": "IMG_20250614_184940966.jpg", "date": "14 Haziran 2025", "rawDate": "2025:06:14 18:49:41", "location": "Kuzguncuk Bostanı", "title": "Çınar Altında Sohbet", "caption": "Zamanın durduğu yer orasıydı. Seni dinlemek ruhuma en iyi gelen terapi sevgilim.", "note": "Zamanın durduğu yer orasıydı. Seni dinlemek ruhuma en iyi gelen terapi sevgilim.", "coraline_chapter": "Düğme Gözlerin Büyüsü", "category": "sweet-moments", "device": "Nothing A063", "gps": null, "width": 4608, "height": 3456},
-  {"id": 24, "filename": "images/memory-24.jpg", "image": "images/memory-24.jpg", "originalFilename": "IMG_20250616_020509510.jpg", "date": "16 Haziran 2025", "rawDate": "2025:06:16 02:05:11", "location": "Üsküdar", "title": "Gece Yarısı Sırları", "caption": "Saat 02:00... Şehir uyurken aşkımızın fısıltıları Kız Kulesi'ne değip geri dönüyordu.", "note": "Saat 02:00... Şehir uyurken aşkımızın fısıltıları Kız Kulesi'ne değip geri dönüyordu.", "coraline_chapter": "Düğme Gözlerin Büyüsü", "category": "magical-nights", "device": "Nothing A063", "gps": null, "width": 3072, "height": 4096},
-  {"id": 25, "filename": "images/memory-25.jpg", "image": "images/memory-25.jpg", "originalFilename": "IMG_20250621_154827118.jpg", "date": "21 Haziran 2025", "rawDate": "2025:06:21 15:48:31", "location": "Cihangir", "title": "Yaz Dönümü Büyüsü", "caption": "Yılın en uzun gününde, sana doyamadığım saatler... Binlerce yıl olsa bile yine sana yetmez ömrüm.", "note": "Yılın en uzun gününde, sana doyamadığım saatler... Binlerce yıl olsa bile yine sana yetmez ömrüm.", "coraline_chapter": "Sonsuz Bağımız", "category": "adventures", "device": "Nothing A063", "gps": null, "width": 4096, "height": 3072},
-  {"id": 26, "filename": "images/memory-26.jpg", "image": "images/memory-26.jpg", "originalFilename": "IMG_20250621_160043200.jpg", "date": "21 Haziran 2025", "rawDate": "2025:06:21 16:00:44", "location": "Galata Köprüsü", "title": "Işıltılı Bakışlar", "caption": "Her fotoğrafımız senin o güzel ruhunu biraz daha yansıtıyor. Benim en güzel şansımsın.", "note": "Her fotoğrafımız senin o güzel ruhunu biraz daha yansıtıyor. Benim en güzel şansımsın.", "coraline_chapter": "Sonsuz Bağımız", "category": "sweet-moments", "device": "Nothing A063", "gps": null, "width": 3456, "height": 4608},
-  {"id": 27, "filename": "images/memory-27.jpg", "image": "images/memory-27.jpg", "originalFilename": "IMG_20250621_161048471.jpg", "date": "21 Haziran 2025", "rawDate": "2025:06:21 16:10:55", "location": "Karaköy Sokakları", "title": "Adım Adım Mutluluk", "caption": "Tarihi binaların arasında yan yana yürürken kaderimizin ipliklerle sımsıkı örüldüğünü hissediyorum.", "note": "Tarihi binaların arasında yan yana yürürken kaderimizin ipliklerle sımsıkı örüldüğünü hissediyorum.", "coraline_chapter": "Sonsuz Bağımız", "category": "adventures", "device": "Nothing A063", "gps": null, "width": 3072, "height": 4096},
-  {"id": 28, "filename": "images/memory-28.jpg", "image": "images/memory-28.jpg", "originalFilename": "IMG_20250621_162120566.jpg", "date": "21 Haziran 2025", "rawDate": "2025:06:21 16:21:25", "location": "Galata", "title": "Düğme Gözlerin Parıltısı", "caption": "Coraline dünyasında bile düğmeler senin gözlerin kadar parıldayamaz. Bu gözler benim tüm kainatım.", "note": "Coraline dünyasında bile düğmeler senin gözlerin kadar parıldayamaz. Bu gözler benim tüm kainatım.", "coraline_chapter": "Sonsuz Bağımız", "category": "sweet-moments", "device": "Nothing A063", "gps": null, "width": 3072, "height": 4096},
-  {"id": 29, "filename": "images/memory-29.jpg", "image": "images/memory-29.jpg", "originalFilename": "IMG_20250621_162156838.jpg", "date": "21 Haziran 2025", "rawDate": "2025:06:21 16:22:00", "location": "Galata", "title": "Büyülü Bir Gülüş", "caption": "Bir tebessümünle kalbimin karanlık köşelerine güneş doğuran güzeller güzeli sevgilim.", "note": "Bir tebessümünle kalbimin karanlık köşelerine güneş doğuran güzeller güzeli sevgilim.", "coraline_chapter": "Sonsuz Bağımız", "category": "sweet-moments", "device": "Nothing A063", "gps": null, "width": 3072, "height": 4096},
-  {"id": 30, "filename": "images/memory-30.jpg", "image": "images/memory-30.jpg", "originalFilename": "IMG_20250621_162316400.jpg", "date": "21 Haziran 2025", "rawDate": "2025:06:21 16:23:18", "location": "Beyoğlu", "title": "Sonsuz Bağ", "caption": "Birbirimize sımsıkı bağlıyız; hiçbir güç bu aşkın düğümünü çözemez Seda'm.", "note": "Birbirimize sımsıkı bağlıyız; hiçbir güç bu aşkın düğümünü çözemez Seda'm.", "coraline_chapter": "Sonsuz Bağımız", "category": "sweet-moments", "device": "Nothing A063", "gps": null, "width": 3456, "height": 4608},
-  {"id": 31, "filename": "images/memory-31.jpg", "image": "images/memory-31.jpg", "originalFilename": "IMG_20250621_170200473.jpg", "date": "21 Haziran 2025", "rawDate": "2025:06:21 17:02:02", "location": "Taksim", "title": "Büyüleyici Bir Anı", "caption": "Kalabalıkların ortasında tek gördüğüm sendin. Bütün dünya silindi, sadece sen kaldın.", "note": "Kalabalıkların ortasında tek gördüğüm sendin. Bütün dünya silindi, sadece sen kaldın.", "coraline_chapter": "Sonsuz Bağımız", "category": "sweet-moments", "device": "Nothing A063", "gps": null, "width": 4096, "height": 3072},
-  {"id": 32, "filename": "images/memory-32.jpg", "image": "images/memory-32.jpg", "originalFilename": "IMG_20250621_171025665.jpg", "date": "21 Haziran 2025", "rawDate": "2025:06:21 17:10:25", "location": "İstiklal Caddesi", "title": "Rüya Gibi Saatler", "caption": "Tramvay sesi, sokak müzisyenleri ve senin parıldayan gözlerin... Unutulmaz bir haziran gecesi.", "note": "Tramvay sesi, sokak müzisyenleri ve senin parıldayan gözlerin... Unutulmaz bir haziran gecesi.", "coraline_chapter": "Sonsuz Bağımız", "category": "adventures", "device": "Nothing A063", "gps": null, "width": 4096, "height": 3072},
-  {"id": 33, "filename": "images/memory-33.jpg", "image": "images/memory-33.jpg", "originalFilename": "IMG_20250621_171230572.jpg", "date": "21 Haziran 2025", "rawDate": "2025:06:21 17:12:31", "location": "Beyoğlu", "title": "Kalp Atışlarımız", "caption": "Birlikte geçen her saniyeyi zihnime altın iğnelerle işliyorum; hiçbir hatıramız solmasın diye.", "note": "Birlikte geçen her saniyeyi zihnime altın iğnelerle işliyorum; hiçbir hatıramız solmasın diye.", "coraline_chapter": "Sonsuz Bağımız", "category": "sweet-moments", "device": "Nothing A063", "gps": null, "width": 4608, "height": 3456},
-  {"id": 34, "filename": "images/memory-34.jpg", "image": "images/memory-34.jpg", "originalFilename": "IMG_20250621_181923889.jpg", "date": "21 Haziran 2025", "rawDate": "2025:06:21 18:19:25", "location": "Haliç", "title": "Akşam Güneşiyle Taçlanan Aşk", "caption": "Haliç'in altın rengi suyuna vuran silüetin... Coraline masalının en güzel prensesi sensin.", "note": "Haliç'in altın rengi suyuna vuran silüetin... Coraline masalının en güzel prensesi sensin.", "coraline_chapter": "Sonsuz Bağımız", "category": "magical-nights", "device": "Nothing A063", "gps": null, "width": 4608, "height": 3456},
-  {"id": 35, "filename": "images/memory-35.jpg", "image": "images/memory-35.jpg", "originalFilename": "IMG_20250622_200224203.jpg", "date": "22 Haziran 2025", "rawDate": "2025:06:22 20:02:26", "location": "Kandilli Sahili", "title": "Göz Kamaştıran Güzellik", "caption": "Sana her baktığımda ilk günkü heyecanın içimde alevlenmesi benim en büyük şansım Seda'm.", "note": "Sana her baktığımda ilk günkü heyecanın içimde alevlenmesi benim en büyük şansım Seda'm.", "coraline_chapter": "Sonsuz Bağımız", "category": "sweet-moments", "device": "Nothing A063", "gps": null, "width": 4608, "height": 3456},
-  {"id": 36, "filename": "images/memory-36.jpg", "image": "images/memory-36.jpg", "originalFilename": "IMG_20250622_203808963.jpg", "date": "22 Haziran 2025", "rawDate": "2025:06:22 20:38:10", "location": "Boğaziçi", "title": "Köprü Işıkları & Biz", "caption": "Boğazın iki yakasını bağlayan köprü gibi, kalplerimiz de kopmaz bir iplikle birbirine bağlı.", "note": "Boğazın iki yakasını bağlayan köprü gibi, kalplerimiz de kopmaz bir iplikle birbirine bağlı.", "coraline_chapter": "Sonsuz Bağımız", "category": "magical-nights", "device": "Nothing A063", "gps": null, "width": 4608, "height": 3456},
-  {"id": 37, "filename": "images/memory-37.jpg", "image": "images/memory-37.jpg", "originalFilename": "IMG_20250628_171736264.jpg", "date": "28 Haziran 2025", "rawDate": "2025:06:28 17:17:36", "location": "Yıldız Parkı", "title": "Sonsuzluğa Atılan Düğüm", "caption": "Bizim hikayemiz burada bitmiyor; Coraline kapısının ardındaki sonsuz evren gibi hep yenilenecek ve büyüyecek sevgilim.", "note": "Bizim hikayemiz burada bitmiyor; Coraline kapısının ardındaki sonsuz evren gibi hep yenilenecek ve büyüyecek sevgilim.", "coraline_chapter": "Sonsuz Bağımız", "category": "adventures", "device": "Nothing A063", "gps": null, "width": 4608, "height": 3456},
-  {"id": 38, "filename": "images/memory-38.jpg", "image": "images/memory-38.jpg", "originalFilename": "IMG_20250711_214729797.jpg", "date": "11 Temmuz 2025", "rawDate": "2025:07:11 21:47:31", "location": "Çamlıca Tepesi", "title": "Yıldızlı Gecenin Mührü", "caption": "Temmuz gecesinin ılık melteminde, ışıl ışıl gözlerine baktığımda Coraline'in kapısının ardındaki tüm evrenlerin en güzeli sendin Seda'm.", "note": "Temmuz gecesinin ılık melteminde, ışıl ışıl gözlerine baktığımda Coraline'in kapısının ardındaki tüm evrenlerin en güzeli sendin Seda'm.", "coraline_chapter": "Sonsuz Bağımız", "category": "magical-nights", "device": "Nothing A063", "gps": null, "width": 4608, "height": 3456},
-  {"id": 39, "filename": "images/memory-39.jpg", "image": "images/memory-39.jpg", "originalFilename": "IMG_20250712_181316410.jpg", "date": "12 Temmuz 2025", "rawDate": "2025:07:12 18:13:18", "location": "Gizli Bahçe", "title": "Sonsuzluğun Eşiğindeki Yeminimiz", "caption": "Kalbinin anahtarı boynumda, aşkın ruhumda mühürlü. Her boyutta, her zamanda ve sonsuza dek yalnızca seninim Seda'm.", "note": "Kalbinin anahtarı boynumda, aşkın ruhumda mühürlü. Her boyutta, her zamanda ve sonsuza dek yalnızca seninim Seda'm.", "coraline_chapter": "Sonsuz Bağımız", "category": "sweet-moments", "device": "Nothing A063", "gps": null, "width": 3072, "height": 4096}
+  {
+    "id": 1,
+    "filename": "images/memory-01.webp",
+    "image": "images/optimized/memory-01.webp",
+    "originalFilename": "IMG_20250325_203007102.jpg",
+    "date": "25 Mart 2025",
+    "rawDate": "2025:03:25 20:30:08",
+    "location": "Kadıköy",
+    "title": "Gizli Kapının İlk Açılışı",
+    "caption": "Seda'm, gözlerine ilk baktığım o an, Coraline'in küçük kapıdan bambaşka bir dünyaya adım atması gibiydi. Kalbimin gizli kapısı o gece sonsuza dek sana açıldı.",
+    "note": "Seda'm, gözlerine ilk baktığım o an, Coraline'in küçük kapıdan bambaşka bir dünyaya adım atması gibiydi. Kalbimin gizli kapısı o gece sonsuza dek sana açıldı.",
+    "coraline_chapter": "Kapının Anahtarı",
+    "category": "first-dates",
+    "device": "Nothing A063",
+    "gps": null,
+    "width": 3456,
+    "height": 4608,
+    "eyes": [
+      {
+        "x": 24.48,
+        "y": 51.02
+      },
+      {
+        "x": 28.96,
+        "y": 53.98
+      }
+    ],
+    "thumb": "images/thumbs/memory-01.webp",
+    "optimized": "images/optimized/memory-01.webp",
+    "lat": 40.9904,
+    "lng": 29.0253,
+    "secretMessage": "Seda'm, senin gözlerinde kaybolmak bu evrenin en güzel büyüsü...",
+    "secretRune": "🌀",
+    "fallback_jpg": "images/memory-01.jpg",
+    "location_name": "Kadıköy Rıhtım & Çarşı",
+    "original": "images/memory-01.jpg"
+  },
+  {
+    "id": 2,
+    "filename": "images/memory-02.webp",
+    "image": "images/optimized/memory-02.webp",
+    "originalFilename": "IMG_20250325_223309932.jpg",
+    "date": "25 Mart 2025",
+    "rawDate": "2025:03:25 22:33:11",
+    "location": "Moda Sahili",
+    "title": "Gecenin Büyülü Işıltısı",
+    "caption": "İlk gecemizin tatlı serinliğinde elini tutarken zaman dondu sanki. Dünya sustu, sadece bizim fısıltılarımız kaldı.",
+    "note": "İlk gecemizin tatlı serinliğinde elini tutarken zaman dondu sanki. Dünya sustu, sadece bizim fısıltılarımız kaldı.",
+    "coraline_chapter": "Kapının Anahtarı",
+    "category": "first-dates",
+    "device": "Nothing A063",
+    "gps": null,
+    "width": 3456,
+    "height": 4608,
+    "eyes": [
+      {
+        "x": 60.83,
+        "y": 60.08
+      },
+      {
+        "x": 73.54,
+        "y": 59.84
+      }
+    ],
+    "thumb": "images/thumbs/memory-02.webp",
+    "optimized": "images/optimized/memory-02.webp",
+    "lat": 40.9822,
+    "lng": 29.0275,
+    "secretMessage": "Gizli kapının ardındaki bütün yıldızlar senin için parıldıyor sevgilim.",
+    "secretRune": "🗝️",
+    "fallback_jpg": "images/memory-02.jpg",
+    "location_name": "Moda Sahili",
+    "original": "images/memory-02.jpg"
+  },
+  {
+    "id": 3,
+    "filename": "images/memory-03.webp",
+    "image": "images/optimized/memory-03.webp",
+    "originalFilename": "IMG_20250405_181907118.jpg",
+    "date": "5 Nisan 2025",
+    "rawDate": "2025:04:05 18:19:07",
+    "location": "Fenerbahçe Parkı",
+    "title": "Nisan Esintisi & Gülüşün",
+    "caption": "Gülüşün Pembe Saray'ın kasvetli havasını dağıtan güneş gibi. Ne zaman gülsen içimde binlerce mavi ateşböceği havalanıyor.",
+    "note": "Gülüşün Pembe Saray'ın kasvetli havasını dağıtan güneş gibi. Ne zaman gülsen içimde binlerce mavi ateşböceği havalanıyor.",
+    "coraline_chapter": "Kapının Anahtarı",
+    "category": "sweet-moments",
+    "device": "Nothing A063",
+    "gps": null,
+    "width": 3072,
+    "height": 4096,
+    "eyes": [
+      {
+        "x": 49.48,
+        "y": 17.19
+      },
+      {
+        "x": 54.69,
+        "y": 17.19
+      }
+    ],
+    "thumb": "images/thumbs/memory-03.webp",
+    "optimized": "images/optimized/memory-03.webp",
+    "lat": 40.9697,
+    "lng": 29.0371,
+    "secretMessage": "Altın bir iğneyle kalbime işlendin; hiçbir fırtına koparamaz.",
+    "secretRune": "✨",
+    "fallback_jpg": "images/memory-03.jpg",
+    "location_name": "Fenerbahçe Parkı",
+    "original": "images/memory-03.jpg"
+  },
+  {
+    "id": 4,
+    "filename": "images/memory-04.webp",
+    "image": "images/optimized/memory-04.webp",
+    "originalFilename": "IMG_20250405_182236255.jpg",
+    "date": "5 Nisan 2025",
+    "rawDate": "2025:04:05 18:22:37",
+    "location": "Kalamış Marina",
+    "title": "Birlikte Adım Adım",
+    "caption": "Seninle yürümek, dönen mor bir tünelden masallar diyarına geçmek gibi. Yol nereye giderse gitsin, yanımda sen varsan orası cennet.",
+    "note": "Seninle yürümek, dönen mor bir tünelden masallar diyarına geçmek gibi. Yol nereye giderse gitsin, yanımda sen varsan orası cennet.",
+    "coraline_chapter": "Kapının Anahtarı",
+    "category": "adventures",
+    "device": "Nothing A063",
+    "gps": null,
+    "width": 4096,
+    "height": 3072,
+    "eyes": [
+      {
+        "x": 44.27,
+        "y": 75.7
+      },
+      {
+        "x": 50.0,
+        "y": 75.7
+      }
+    ],
+    "thumb": "images/thumbs/memory-04.webp",
+    "optimized": "images/optimized/memory-04.webp",
+    "lat": 40.9765,
+    "lng": 29.0402,
+    "secretMessage": "Gören Taş bile senin bu saf ve benzersiz güzelliğini tarif edemez.",
+    "secretRune": "🖤",
+    "fallback_jpg": "images/memory-04.jpg",
+    "location_name": "Kalamış Marina",
+    "original": "images/memory-04.jpg"
+  },
+  {
+    "id": 5,
+    "filename": "images/memory-05.webp",
+    "image": "images/optimized/memory-05.webp",
+    "originalFilename": "IMG_20250406_131434363.jpg",
+    "date": "6 Nisan 2025",
+    "rawDate": "2025:04:06 13:14:34",
+    "location": "Moda",
+    "title": "Pazar Kahvesi ve Gözlerin",
+    "caption": "Bana bakan o güzel gözlerinde kaybolmamak imkansız. Coraline'in aradığı tüm büyüler senin bir tek bakışında saklı sevgilim.",
+    "note": "Bana bakan o güzel gözlerinde kaybolmamak imkansız. Coraline'in aradığı tüm büyüler senin bir tek bakışında saklı sevgilim.",
+    "coraline_chapter": "Kapının Anahtarı",
+    "category": "sweet-moments",
+    "device": "Nothing A063",
+    "gps": null,
+    "width": 3072,
+    "height": 4096,
+    "eyes": [
+      {
+        "x": 48.23,
+        "y": 33.44
+      },
+      {
+        "x": 55.62,
+        "y": 32.89
+      }
+    ],
+    "thumb": "images/thumbs/memory-05.webp",
+    "optimized": "images/optimized/memory-05.webp",
+    "lat": 40.9806,
+    "lng": 29.0248,
+    "secretMessage": "Pembe Saray'ın en zarif prensesi sensin Seda'm.",
+    "secretRune": "🧵",
+    "fallback_jpg": "images/memory-05.jpg",
+    "location_name": "Moda Çay Bahçesi & Burnu",
+    "original": "images/memory-05.jpg"
+  },
+  {
+    "id": 6,
+    "filename": "images/memory-06.webp",
+    "image": "images/optimized/memory-06.webp",
+    "originalFilename": "IMG_20250406_192646645.jpg",
+    "date": "6 Nisan 2025",
+    "rawDate": "2025:04:06 19:26:48",
+    "location": "Bostancı İskelesi",
+    "title": "Akşam Kızıllığı",
+    "caption": "Gün batımı gökyüzünü lacivertle pembeye boyarken, seninle paylaştığım her anın bir rüya olmadığını fısıldıyordu rüzgar.",
+    "note": "Gün batımı gökyüzünü lacivertle pembeye boyarken, seninle paylaştığım her anın bir rüya olmadığını fısıldıyordu rüzgar.",
+    "coraline_chapter": "Kapının Anahtarı",
+    "category": "magical-nights",
+    "device": "Nothing A063",
+    "gps": null,
+    "width": 3456,
+    "height": 4608,
+    "eyes": [
+      {
+        "x": 68.75,
+        "y": 49.45
+      },
+      {
+        "x": 79.9,
+        "y": 49.45
+      }
+    ],
+    "thumb": "images/thumbs/memory-06.webp",
+    "optimized": "images/optimized/memory-06.webp",
+    "lat": 40.9525,
+    "lng": 29.0945,
+    "secretMessage": "Gözlerindeki siyah düğmeler bile senin parıltını söndüremez.",
+    "secretRune": "🪡",
+    "fallback_jpg": "images/memory-06.jpg",
+    "location_name": "Bostancı İskelesi & Sahil",
+    "original": "images/memory-06.jpg"
+  },
+  {
+    "id": 7,
+    "filename": "images/memory-07.webp",
+    "image": "images/optimized/memory-07.webp",
+    "originalFilename": "IMG_20250406_203032009.jpg",
+    "date": "6 Nisan 2025",
+    "rawDate": "2025:04:06 20:30:32",
+    "location": "Bağdat Caddesi",
+    "title": "Yıldızların Altında İki Kalp",
+    "caption": "Işıklar tek tek sönerken bile senin gözlerindeki ışıltı bütün karanlıkları aydınlatmaya yetti canım Seda'm.",
+    "note": "Işıklar tek tek sönerken bile senin gözlerindeki ışıltı bütün karanlıkları aydınlatmaya yetti canım Seda'm.",
+    "coraline_chapter": "Kapının Anahtarı",
+    "category": "magical-nights",
+    "device": "Nothing A063",
+    "gps": null,
+    "width": 3072,
+    "height": 4096,
+    "eyes": [
+      {
+        "x": 11.46,
+        "y": 8.2
+      },
+      {
+        "x": 19.38,
+        "y": 8.2
+      }
+    ],
+    "thumb": "images/thumbs/memory-07.webp",
+    "optimized": "images/optimized/memory-07.webp",
+    "lat": 40.9634,
+    "lng": 29.0689,
+    "secretMessage": "Birlikte attığımız her adım, sonsuzluğa doğru yazılmış bir mısra.",
+    "secretRune": "👁️",
+    "fallback_jpg": "images/memory-07.jpg",
+    "location_name": "Bağdat Caddesi",
+    "original": "images/memory-07.jpg"
+  },
+  {
+    "id": 8,
+    "filename": "images/memory-08.webp",
+    "image": "images/optimized/memory-08.webp",
+    "originalFilename": "IMG_20250413_170537828.jpg",
+    "date": "13 Nisan 2025",
+    "rawDate": "2025:04:13 17:05:39",
+    "location": "Emirgan Korusu",
+    "title": "Baharın En Güzel Çiçeği",
+    "caption": "Bahçedeki laleler bile senin zarafetinin yanında boyun eğdi. Sen benim bu dünyadaki en kıymetli mucizemsin.",
+    "note": "Bahçedeki laleler bile senin zarafetinin yanında boyun eğdi. Sen benim bu dünyadaki en kıymetli mucizemsin.",
+    "coraline_chapter": "Öteki Dünyanın Yıldızları",
+    "category": "sweet-moments",
+    "device": "Nothing A063",
+    "gps": null,
+    "width": 4608,
+    "height": 3456,
+    "eyes": [
+      {
+        "x": 28.54,
+        "y": 46.56
+      },
+      {
+        "x": 40.42,
+        "y": 57.5
+      }
+    ],
+    "thumb": "images/thumbs/memory-08.webp",
+    "optimized": "images/optimized/memory-08.webp",
+    "lat": 41.1086,
+    "lng": 29.0558,
+    "secretMessage": "Coraline Other World'ü aradı, ben ise sende tüm dünyayı buldum.",
+    "secretRune": "🌙",
+    "fallback_jpg": "images/memory-08.jpg",
+    "location_name": "Emirgan Korusu Lale Bahçeleri",
+    "original": "images/memory-08.jpg"
+  },
+  {
+    "id": 9,
+    "filename": "images/memory-09.webp",
+    "image": "images/optimized/memory-09.webp",
+    "originalFilename": "IMG_20250413_170557203.jpg",
+    "date": "13 Nisan 2025",
+    "rawDate": "2025:04:13 17:05:59",
+    "location": "Emirgan",
+    "title": "Masumiyetin Zirvesi",
+    "caption": "Kameraya hafifçe kaçamak bakışın... Her defasında kalbimin ritmini değiştirmeyi nasıl başarıyorsun sevgilim?",
+    "note": "Kameraya hafifçe kaçamak bakışın... Her defasında kalbimin ritmini değiştirmeyi nasıl başarıyorsun sevgilim?",
+    "coraline_chapter": "Öteki Dünyanın Yıldızları",
+    "category": "sweet-moments",
+    "device": "Nothing A063",
+    "gps": null,
+    "width": 4608,
+    "height": 3456,
+    "eyes": [
+      {
+        "x": 58.75,
+        "y": 55.0
+      },
+      {
+        "x": 62.71,
+        "y": 51.41
+      }
+    ],
+    "thumb": "images/thumbs/memory-09.webp",
+    "optimized": "images/optimized/memory-09.webp",
+    "lat": 41.1042,
+    "lng": 29.0572,
+    "secretMessage": "Seda & Furkan: Her boyutta, her tünelin ucunda el eleyiz.",
+    "secretRune": "🌀",
+    "fallback_jpg": "images/memory-09.jpg",
+    "location_name": "Emirgan Sahili",
+    "original": "images/memory-09.jpg"
+  },
+  {
+    "id": 10,
+    "filename": "images/memory-10.webp",
+    "image": "images/optimized/memory-10.webp",
+    "originalFilename": "IMG_20250423_174752775.jpg",
+    "date": "23 Nisan 2025",
+    "rawDate": "2025:04:23 17:47:53",
+    "location": "Bebek Parkı",
+    "title": "Çocuksu Sevinçlerimiz",
+    "caption": "Seninle içimdeki çocuk yeniden doğdu. Hayatın tüm gri rengini silip bizi rengarenk boyadın.",
+    "note": "Seninle içimdeki çocuk yeniden doğdu. Hayatın tüm gri rengini silip bizi rengarenk boyadın.",
+    "coraline_chapter": "Öteki Dünyanın Yıldızları",
+    "category": "adventures",
+    "device": "Nothing A063",
+    "gps": null,
+    "width": 4608,
+    "height": 3456,
+    "eyes": [
+      {
+        "x": 61.35,
+        "y": 51.17
+      },
+      {
+        "x": 71.25,
+        "y": 51.17
+      }
+    ],
+    "thumb": "images/thumbs/memory-10.webp",
+    "optimized": "images/optimized/memory-10.webp",
+    "lat": 41.0772,
+    "lng": 29.0436,
+    "secretMessage": "Sen güldüğünde içimde binlerce mavi ateşböceği havalanıyor.",
+    "secretRune": "🗝️",
+    "fallback_jpg": "images/memory-10.jpg",
+    "location_name": "Bebek Parkı & Koyu",
+    "original": "images/memory-10.jpg"
+  },
+  {
+    "id": 11,
+    "filename": "images/memory-11.webp",
+    "image": "images/optimized/memory-11.webp",
+    "originalFilename": "IMG_20250423_174810812.jpg",
+    "date": "23 Nisan 2025",
+    "rawDate": "2025:04:23 17:48:11",
+    "location": "Boğaz Kıyısı",
+    "title": "Huzurun Fotoğrafı",
+    "caption": "Başını omzuma yasladığında dünyadaki tüm telaşlar son buluyor. İşte tam o an evimde olduğumu hissediyorum.",
+    "note": "Başını omzuma yasladığında dünyadaki tüm telaşlar son buluyor. İşte tam o an evimde olduğumu hissediyorum.",
+    "coraline_chapter": "Öteki Dünyanın Yıldızları",
+    "category": "sweet-moments",
+    "device": "Nothing A063",
+    "gps": null,
+    "width": 4608,
+    "height": 3456,
+    "eyes": [
+      {
+        "x": 53.85,
+        "y": 61.8
+      },
+      {
+        "x": 62.71,
+        "y": 61.8
+      }
+    ],
+    "thumb": "images/thumbs/memory-11.webp",
+    "optimized": "images/optimized/memory-11.webp",
+    "lat": 41.0673,
+    "lng": 29.0439,
+    "secretMessage": "Seda'm, senin gözlerinde kaybolmak bu evrenin en güzel büyüsü...",
+    "secretRune": "✨",
+    "fallback_jpg": "images/memory-11.jpg",
+    "location_name": "Arnavutköy Boğaz Kıyısı",
+    "original": "images/memory-11.jpg"
+  },
+  {
+    "id": 12,
+    "filename": "images/memory-12.webp",
+    "image": "images/optimized/memory-12.webp",
+    "originalFilename": "IMG_20250423_212620181.jpg",
+    "date": "23 Nisan 2025",
+    "rawDate": "2025:04:23 21:26:21",
+    "location": "Karaköy",
+    "title": "Gece Mavisi Hatıralar",
+    "caption": "Işıklı sokaklar ve senin sıcacık elin. Coraline Other World'de bile bundan daha kusursuz bir an yaratamazdı.",
+    "note": "Işıklı sokaklar ve senin sıcacık elin. Coraline Other World'de bile bundan daha kusursuz bir an yaratamazdı.",
+    "coraline_chapter": "Öteki Dünyanın Yıldızları",
+    "category": "magical-nights",
+    "device": "Nothing A063",
+    "gps": null,
+    "width": 4608,
+    "height": 3456,
+    "eyes": [
+      {
+        "x": 40.39,
+        "y": 61.46
+      },
+      {
+        "x": 49.38,
+        "y": 56.77
+      }
+    ],
+    "thumb": "images/thumbs/memory-12.webp",
+    "optimized": "images/optimized/memory-12.webp",
+    "lat": 41.0232,
+    "lng": 28.9778,
+    "secretMessage": "Gizli kapının ardındaki bütün yıldızlar senin için parıldıyor sevgilim.",
+    "secretRune": "🖤",
+    "fallback_jpg": "images/memory-12.jpg",
+    "location_name": "Karaköy Rıhtımı",
+    "original": "images/memory-12.jpg"
+  },
+  {
+    "id": 13,
+    "filename": "images/memory-13.webp",
+    "image": "images/optimized/memory-13.webp",
+    "originalFilename": "IMG_20250426_160258314.jpg",
+    "date": "26 Nisan 2025",
+    "rawDate": "2025:04:26 16:02:59",
+    "location": "Beşiktaş",
+    "title": "Kahkahaların Yankısı",
+    "caption": "Birlikte attığımız her kahkaha, geleceğimize atılan sımsıkı ve parıltılı bir düğüm gibi kalbime işleniyor.",
+    "note": "Birlikte attığımız her kahkaha, geleceğimize atılan sımsıkı ve parıltılı bir düğüm gibi kalbime işleniyor.",
+    "coraline_chapter": "Öteki Dünyanın Yıldızları",
+    "category": "adventures",
+    "device": "Nothing A063",
+    "gps": null,
+    "width": 4096,
+    "height": 3072,
+    "eyes": [
+      {
+        "x": 50.23,
+        "y": 23.96
+      },
+      {
+        "x": 56.48,
+        "y": 25.94
+      }
+    ],
+    "thumb": "images/thumbs/memory-13.webp",
+    "optimized": "images/optimized/memory-13.webp",
+    "lat": 41.0478,
+    "lng": 29.0042,
+    "secretMessage": "Altın bir iğneyle kalbime işlendin; hiçbir fırtına koparamaz.",
+    "secretRune": "🧵",
+    "fallback_jpg": "images/memory-13.jpg",
+    "location_name": "Beşiktaş Abbasağa Parkı",
+    "original": "images/memory-13.jpg"
+  },
+  {
+    "id": 14,
+    "filename": "images/memory-14.webp",
+    "image": "images/optimized/memory-14.webp",
+    "originalFilename": "IMG_20250426_185611256.jpg",
+    "date": "26 Nisan 2025",
+    "rawDate": "2025:04:26 18:56:11",
+    "location": "Ortaköy",
+    "title": "Göz Göze Sessizlik",
+    "caption": "Hiçbir kelimeye ihtiyaç duymadan sadece bakışarak anlaştığımız o eşsiz an... Ruh ikizim olduğunu biliyorum.",
+    "note": "Hiçbir kelimeye ihtiyaç duymadan sadece bakışarak anlaştığımız o eşsiz an... Ruh ikizim olduğunu biliyorum.",
+    "coraline_chapter": "Öteki Dünyanın Yıldızları",
+    "category": "sweet-moments",
+    "device": "Nothing A063",
+    "gps": null,
+    "width": 8160,
+    "height": 6144,
+    "eyes": [
+      {
+        "x": 21.56,
+        "y": 60.68
+      },
+      {
+        "x": 25.78,
+        "y": 60.68
+      }
+    ],
+    "thumb": "images/thumbs/memory-14.webp",
+    "optimized": "images/optimized/memory-14.webp",
+    "lat": 41.0472,
+    "lng": 29.027,
+    "secretMessage": "Gören Taş bile senin bu saf ve benzersiz güzelliğini tarif edemez.",
+    "secretRune": "🪡",
+    "fallback_jpg": "images/memory-14.jpg",
+    "location_name": "Ortaköy Meydanı & Boğaz",
+    "original": "images/memory-14.jpg"
+  },
+  {
+    "id": 15,
+    "filename": "images/memory-15.webp",
+    "image": "images/optimized/memory-15.webp",
+    "originalFilename": "IMG_20250426_203434833.jpg",
+    "date": "26 Nisan 2025",
+    "rawDate": "2025:04:26 20:34:42",
+    "location": "Galata",
+    "title": "Büyülü Akşam Yemeği",
+    "caption": "Galata Kulesi'nin gölgesinde, masamızdaki mum ışığı senin gözlerindeki ışıltıya yenik düştü sevgilim.",
+    "note": "Galata Kulesi'nin gölgesinde, masamızdaki mum ışığı senin gözlerindeki ışıltıya yenik düştü sevgilim.",
+    "coraline_chapter": "Öteki Dünyanın Yıldızları",
+    "category": "magical-nights",
+    "device": "Nothing A063",
+    "gps": null,
+    "width": 6144,
+    "height": 8192,
+    "eyes": [
+      {
+        "x": 43.54,
+        "y": 45.08
+      },
+      {
+        "x": 51.15,
+        "y": 45.08
+      }
+    ],
+    "thumb": "images/thumbs/memory-15.webp",
+    "optimized": "images/optimized/memory-15.webp",
+    "lat": 41.0256,
+    "lng": 28.9741,
+    "secretMessage": "Pembe Saray'ın en zarif prensesi sensin Seda'm.",
+    "secretRune": "👁️",
+    "fallback_jpg": "images/memory-15.jpg",
+    "location_name": "Galata Kulesi Meydanı",
+    "original": "images/memory-15.jpg"
+  },
+  {
+    "id": 16,
+    "filename": "images/memory-16.webp",
+    "image": "images/optimized/memory-16.webp",
+    "originalFilename": "IMG_20250503_170822745.jpg",
+    "date": "3 Mayıs 2025",
+    "rawDate": "2025:05:03 17:08:23",
+    "location": "Caddebostan",
+    "title": "Mayıs Şarkımız",
+    "caption": "Çimlere uzanıp gökyüzüne baktığımız gün, Coraline ninni melodisi gibi tatlı bir huzur sardı her yanımızı.",
+    "note": "Çimlere uzanıp gökyüzüne baktığımız gün, Coraline ninni melodisi gibi tatlı bir huzur sardı her yanımızı.",
+    "coraline_chapter": "Düğme Gözlerin Büyüsü",
+    "category": "sweet-moments",
+    "device": "Nothing A063",
+    "gps": null,
+    "width": 4608,
+    "height": 3456,
+    "eyes": [
+      {
+        "x": 40.0,
+        "y": 42.0
+      },
+      {
+        "x": 52.0,
+        "y": 42.0
+      }
+    ],
+    "thumb": "images/thumbs/memory-16.webp",
+    "optimized": "images/optimized/memory-16.webp",
+    "lat": 40.9658,
+    "lng": 29.0573,
+    "secretMessage": "Gözlerindeki siyah düğmeler bile senin parıltını söndüremez.",
+    "secretRune": "🌙",
+    "fallback_jpg": "images/memory-16.jpg",
+    "location_name": "Caddebostan Dalyan Parkı",
+    "original": "images/memory-16.jpg"
+  },
+  {
+    "id": 17,
+    "filename": "images/memory-17.webp",
+    "image": "images/optimized/memory-17.webp",
+    "originalFilename": "IMG_20250503_170917771.jpg",
+    "date": "3 Mayıs 2025",
+    "rawDate": "2025:05:03 17:09:18",
+    "location": "Caddebostan Sahil",
+    "title": "Rüzgarla Dans Eden Saçların",
+    "caption": "Saçların rüzgarda dalgalanırken bir kez daha anladım: Benim bütün dünyam ve kaderim senin yanında olmak.",
+    "note": "Saçların rüzgarda dalgalanırken bir kez daha anladım: Benim bütün dünyam ve kaderim senin yanında olmak.",
+    "coraline_chapter": "Düğme Gözlerin Büyüsü",
+    "category": "sweet-moments",
+    "device": "Nothing A063",
+    "gps": null,
+    "width": 4608,
+    "height": 3456,
+    "eyes": [
+      {
+        "x": 14.69,
+        "y": 37.11
+      },
+      {
+        "x": 17.92,
+        "y": 37.11
+      }
+    ],
+    "thumb": "images/thumbs/memory-17.webp",
+    "optimized": "images/optimized/memory-17.webp",
+    "lat": 40.9622,
+    "lng": 29.0638,
+    "secretMessage": "Birlikte attığımız her adım, sonsuzluğa doğru yazılmış bir mısra.",
+    "secretRune": "🌀",
+    "fallback_jpg": "images/memory-17.jpg",
+    "location_name": "Caddebostan Sahil Şeridi",
+    "original": "images/memory-17.jpg"
+  },
+  {
+    "id": 18,
+    "filename": "images/memory-18.webp",
+    "image": "images/optimized/memory-18.webp",
+    "originalFilename": "IMG_20250608_135046339.jpg",
+    "date": "8 Haziran 2025",
+    "rawDate": "2025:06:08 13:50:46",
+    "location": "Heybeliada",
+    "title": "Haziran Güneşi",
+    "caption": "Ada sokaklarında el ele kaybolmak, bisiklet zilleri ve senin o paha biçilmez kahkahan.",
+    "note": "Ada sokaklarında el ele kaybolmak, bisiklet zilleri ve senin o paha biçilmez kahkahan.",
+    "coraline_chapter": "Düğme Gözlerin Büyüsü",
+    "category": "adventures",
+    "device": "Nothing A063",
+    "gps": null,
+    "width": 4608,
+    "height": 3456,
+    "eyes": [
+      {
+        "x": 59.38,
+        "y": 42.42
+      },
+      {
+        "x": 75.94,
+        "y": 41.56
+      }
+    ],
+    "thumb": "images/thumbs/memory-18.webp",
+    "optimized": "images/optimized/memory-18.webp",
+    "lat": 40.8719,
+    "lng": 29.0934,
+    "secretMessage": "Coraline Other World'ü aradı, ben ise sende tüm dünyayı buldum.",
+    "secretRune": "🗝️",
+    "fallback_jpg": "images/memory-18.jpg",
+    "location_name": "Heybeliada Çamlimanı",
+    "original": "images/memory-18.jpg"
+  },
+  {
+    "id": 19,
+    "filename": "images/memory-19.webp",
+    "image": "images/optimized/memory-19.webp",
+    "originalFilename": "IMG_20250608_170046688.jpg",
+    "date": "8 Haziran 2025",
+    "rawDate": "2025:06:08 17:00:46",
+    "location": "Büyükada",
+    "title": "Deniz Kokusu & Aşk",
+    "caption": "Denizin mavisi senin güzelliğinle birleşince ortaya çıkan tabloyu hiçbir ressam tuvale dökemez Seda'm.",
+    "note": "Denizin mavisi senin güzelliğinle birleşince ortaya çıkan tabloyu hiçbir ressam tuvale dökemez Seda'm.",
+    "coraline_chapter": "Düğme Gözlerin Büyüsü",
+    "category": "sweet-moments",
+    "device": "Nothing A063",
+    "gps": null,
+    "width": 3072,
+    "height": 4096,
+    "eyes": [
+      {
+        "x": 44.0,
+        "y": 38.0
+      },
+      {
+        "x": 56.0,
+        "y": 38.0
+      }
+    ],
+    "thumb": "images/thumbs/memory-19.webp",
+    "optimized": "images/optimized/memory-19.webp",
+    "lat": 40.8625,
+    "lng": 29.1172,
+    "secretMessage": "Seda & Furkan: Her boyutta, her tünelin ucunda el eleyiz.",
+    "secretRune": "✨",
+    "fallback_jpg": "images/memory-19.jpg",
+    "location_name": "Büyükada Dilburnu",
+    "original": "images/memory-19.jpg"
+  },
+  {
+    "id": 20,
+    "filename": "images/memory-20.webp",
+    "image": "images/optimized/memory-20.webp",
+    "originalFilename": "IMG_20250608_194543190.jpg",
+    "date": "8 Haziran 2025",
+    "rawDate": "2025:06:08 19:45:43",
+    "location": "Marmara Denizi",
+    "title": "Vapurda İki Çay, Bir Ömür",
+    "caption": "Martıların eşlik ettiği vapur yolculuğumuzda çayımızı yudumlarken sonsuza dek bu anı yaşamak istedim.",
+    "note": "Martıların eşlik ettiği vapur yolculuğumuzda çayımızı yudumlarken sonsuza dek bu anı yaşamak istedim.",
+    "coraline_chapter": "Düğme Gözlerin Büyüsü",
+    "category": "first-dates",
+    "device": "Nothing A063",
+    "gps": null,
+    "width": 4608,
+    "height": 3456,
+    "eyes": [
+      {
+        "x": 40.31,
+        "y": 55.55
+      },
+      {
+        "x": 53.33,
+        "y": 56.72
+      }
+    ],
+    "thumb": "images/thumbs/memory-20.webp",
+    "optimized": "images/optimized/memory-20.webp",
+    "lat": 40.925,
+    "lng": 29.055,
+    "secretMessage": "Sen güldüğünde içimde binlerce mavi ateşböceği havalanıyor.",
+    "secretRune": "🖤",
+    "fallback_jpg": "images/memory-20.jpg",
+    "location_name": "Marmara Denizi Vapur Yolu",
+    "original": "images/memory-20.jpg"
+  },
+  {
+    "id": 21,
+    "filename": "images/memory-21.webp",
+    "image": "images/optimized/memory-21.webp",
+    "originalFilename": "IMG_20250608_194555105.jpg",
+    "date": "8 Haziran 2025",
+    "rawDate": "2025:06:08 19:45:55",
+    "location": "Adalar Vapuru",
+    "title": "Sonsuz Dalgalar",
+    "caption": "Gözlerinde deniz, yüreğinde koskoca bir sevgi... İyi ki varsın bir tanem.",
+    "note": "Gözlerinde deniz, yüreğinde koskoca bir sevgi... İyi ki varsın bir tanem.",
+    "coraline_chapter": "Düğme Gözlerin Büyüsü",
+    "category": "sweet-moments",
+    "device": "Nothing A063",
+    "gps": null,
+    "width": 4608,
+    "height": 3456,
+    "eyes": [
+      {
+        "x": 43.0,
+        "y": 36.0
+      },
+      {
+        "x": 55.0,
+        "y": 36.0
+      }
+    ],
+    "thumb": "images/thumbs/memory-21.webp",
+    "optimized": "images/optimized/memory-21.webp",
+    "lat": 40.9067,
+    "lng": 29.0528,
+    "secretMessage": "Seda'm, senin gözlerinde kaybolmak bu evrenin en güzel büyüsü...",
+    "secretRune": "🧵",
+    "fallback_jpg": "images/memory-21.jpg",
+    "location_name": "Kınalıada Açıkları Vapur",
+    "original": "images/memory-21.jpg"
+  },
+  {
+    "id": 22,
+    "filename": "images/memory-22.webp",
+    "image": "images/optimized/memory-22.webp",
+    "originalFilename": "IMG_20250614_182500918.jpg",
+    "date": "14 Haziran 2025",
+    "rawDate": "2025:06:14 18:25:01",
+    "location": "Kuzguncuk",
+    "title": "Yaz Başlangıcı Tutkumuz",
+    "caption": "Rengarenk ahşap evlerin arasında gezinirken sanki Pembe Saray'ın sevimli sokağında gibiydik.",
+    "note": "Rengarenk ahşap evlerin arasında gezinirken sanki Pembe Saray'ın sevimli sokağında gibiydik.",
+    "coraline_chapter": "Düğme Gözlerin Büyüsü",
+    "category": "adventures",
+    "device": "Nothing A063",
+    "gps": null,
+    "width": 4608,
+    "height": 3456,
+    "eyes": [
+      {
+        "x": 41.67,
+        "y": 46.02
+      },
+      {
+        "x": 54.27,
+        "y": 46.64
+      }
+    ],
+    "thumb": "images/thumbs/memory-22.webp",
+    "optimized": "images/optimized/memory-22.webp",
+    "lat": 41.0347,
+    "lng": 29.0298,
+    "secretMessage": "Gizli kapının ardındaki bütün yıldızlar senin için parıldıyor sevgilim.",
+    "secretRune": "🪡",
+    "fallback_jpg": "images/memory-22.jpg",
+    "location_name": "Kuzguncuk İcadiye Caddesi",
+    "original": "images/memory-22.jpg"
+  },
+  {
+    "id": 23,
+    "filename": "images/memory-23.webp",
+    "image": "images/optimized/memory-23.webp",
+    "originalFilename": "IMG_20250614_184940966.jpg",
+    "date": "14 Haziran 2025",
+    "rawDate": "2025:06:14 18:49:41",
+    "location": "Kuzguncuk Bostanı",
+    "title": "Çınar Altında Sohbet",
+    "caption": "Zamanın durduğu yer orasıydı. Seni dinlemek ruhuma en iyi gelen terapi sevgilim.",
+    "note": "Zamanın durduğu yer orasıydı. Seni dinlemek ruhuma en iyi gelen terapi sevgilim.",
+    "coraline_chapter": "Düğme Gözlerin Büyüsü",
+    "category": "sweet-moments",
+    "device": "Nothing A063",
+    "gps": null,
+    "width": 4608,
+    "height": 3456,
+    "eyes": [
+      {
+        "x": 66.35,
+        "y": 49.3
+      },
+      {
+        "x": 80.1,
+        "y": 47.42
+      }
+    ],
+    "thumb": "images/thumbs/memory-23.webp",
+    "optimized": "images/optimized/memory-23.webp",
+    "lat": 41.0335,
+    "lng": 29.0315,
+    "secretMessage": "Altın bir iğneyle kalbime işlendin; hiçbir fırtına koparamaz.",
+    "secretRune": "👁️",
+    "fallback_jpg": "images/memory-23.jpg",
+    "location_name": "Tarihi Kuzguncuk Bostanı",
+    "original": "images/memory-23.jpg"
+  },
+  {
+    "id": 24,
+    "filename": "images/memory-24.webp",
+    "image": "images/optimized/memory-24.webp",
+    "originalFilename": "IMG_20250616_020509510.jpg",
+    "date": "16 Haziran 2025",
+    "rawDate": "2025:06:16 02:05:11",
+    "location": "Üsküdar",
+    "title": "Gece Yarısı Sırları",
+    "caption": "Saat 02:00... Şehir uyurken aşkımızın fısıltıları Kız Kulesi'ne değip geri dönüyordu.",
+    "note": "Saat 02:00... Şehir uyurken aşkımızın fısıltıları Kız Kulesi'ne değip geri dönüyordu.",
+    "coraline_chapter": "Düğme Gözlerin Büyüsü",
+    "category": "magical-nights",
+    "device": "Nothing A063",
+    "gps": null,
+    "width": 3072,
+    "height": 4096,
+    "eyes": [
+      {
+        "x": 46.0,
+        "y": 38.0
+      },
+      {
+        "x": 54.0,
+        "y": 38.0
+      }
+    ],
+    "thumb": "images/thumbs/memory-24.webp",
+    "optimized": "images/optimized/memory-24.webp",
+    "lat": 41.0211,
+    "lng": 29.0061,
+    "secretMessage": "Gören Taş bile senin bu saf ve benzersiz güzelliğini tarif edemez.",
+    "secretRune": "🌙",
+    "fallback_jpg": "images/memory-24.jpg",
+    "location_name": "Üsküdar Salacak & Kız Kulesi",
+    "original": "images/memory-24.jpg"
+  },
+  {
+    "id": 25,
+    "filename": "images/memory-25.webp",
+    "image": "images/optimized/memory-25.webp",
+    "originalFilename": "IMG_20250621_154827118.jpg",
+    "date": "21 Haziran 2025",
+    "rawDate": "2025:06:21 15:48:31",
+    "location": "Cihangir",
+    "title": "Yaz Dönümü Büyüsü",
+    "caption": "Yılın en uzun gününde, sana doyamadığım saatler... Binlerce yıl olsa bile yine sana yetmez ömrüm.",
+    "note": "Yılın en uzun gününde, sana doyamadığım saatler... Binlerce yıl olsa bile yine sana yetmez ömrüm.",
+    "coraline_chapter": "Sonsuz Bağımız",
+    "category": "adventures",
+    "device": "Nothing A063",
+    "gps": null,
+    "width": 4096,
+    "height": 3072,
+    "eyes": [
+      {
+        "x": 62.58,
+        "y": 31.35
+      },
+      {
+        "x": 70.23,
+        "y": 38.44
+      }
+    ],
+    "thumb": "images/thumbs/memory-25.webp",
+    "optimized": "images/optimized/memory-25.webp",
+    "lat": 41.0314,
+    "lng": 28.9863,
+    "secretMessage": "Pembe Saray'ın en zarif prensesi sensin Seda'm.",
+    "secretRune": "🌀",
+    "fallback_jpg": "images/memory-25.jpg",
+    "location_name": "Cihangir Merdivenleri",
+    "original": "images/memory-25.jpg"
+  },
+  {
+    "id": 26,
+    "filename": "images/memory-26.webp",
+    "image": "images/optimized/memory-26.webp",
+    "originalFilename": "IMG_20250621_160043200.jpg",
+    "date": "21 Haziran 2025",
+    "rawDate": "2025:06:21 16:00:44",
+    "location": "Galata Köprüsü",
+    "title": "Işıltılı Bakışlar",
+    "caption": "Her fotoğrafımız senin o güzel ruhunu biraz daha yansıtıyor. Benim en güzel şansımsın.",
+    "note": "Her fotoğrafımız senin o güzel ruhunu biraz daha yansıtıyor. Benim en güzel şansımsın.",
+    "coraline_chapter": "Sonsuz Bağımız",
+    "category": "sweet-moments",
+    "device": "Nothing A063",
+    "gps": null,
+    "width": 3456,
+    "height": 4608,
+    "eyes": [
+      {
+        "x": 25.62,
+        "y": 46.33
+      },
+      {
+        "x": 39.17,
+        "y": 46.02
+      }
+    ],
+    "thumb": "images/thumbs/memory-26.webp",
+    "optimized": "images/optimized/memory-26.webp",
+    "lat": 41.0202,
+    "lng": 28.9733,
+    "secretMessage": "Gözlerindeki siyah düğmeler bile senin parıltını söndüremez.",
+    "secretRune": "🗝️",
+    "fallback_jpg": "images/memory-26.jpg",
+    "location_name": "Tarihi Galata Köprüsü",
+    "original": "images/memory-26.jpg"
+  },
+  {
+    "id": 27,
+    "filename": "images/memory-27.webp",
+    "image": "images/optimized/memory-27.webp",
+    "originalFilename": "IMG_20250621_161048471.jpg",
+    "date": "21 Haziran 2025",
+    "rawDate": "2025:06:21 16:10:55",
+    "location": "Karaköy Sokakları",
+    "title": "Adım Adım Mutluluk",
+    "caption": "Tarihi binaların arasında yan yana yürürken kaderimizin ipliklerle sımsıkı örüldüğünü hissediyorum.",
+    "note": "Tarihi binaların arasında yan yana yürürken kaderimizin ipliklerle sımsıkı örüldüğünü hissediyorum.",
+    "coraline_chapter": "Sonsuz Bağımız",
+    "category": "adventures",
+    "device": "Nothing A063",
+    "gps": null,
+    "width": 3072,
+    "height": 4096,
+    "eyes": [
+      {
+        "x": 42.4,
+        "y": 42.58
+      },
+      {
+        "x": 49.27,
+        "y": 42.58
+      }
+    ],
+    "thumb": "images/thumbs/memory-27.webp",
+    "optimized": "images/optimized/memory-27.webp",
+    "lat": 41.0245,
+    "lng": 28.979,
+    "secretMessage": "Birlikte attığımız her adım, sonsuzluğa doğru yazılmış bir mısra.",
+    "secretRune": "✨",
+    "fallback_jpg": "images/memory-27.jpg",
+    "location_name": "Karaköy Fransız Geçidi",
+    "original": "images/memory-27.jpg"
+  },
+  {
+    "id": 28,
+    "filename": "images/memory-28.webp",
+    "image": "images/optimized/memory-28.webp",
+    "originalFilename": "IMG_20250621_162120566.jpg",
+    "date": "21 Haziran 2025",
+    "rawDate": "2025:06:21 16:21:25",
+    "location": "Galata",
+    "title": "Düğme Gözlerin Parıltısı",
+    "caption": "Coraline dünyasında bile düğmeler senin gözlerin kadar parıldayamaz. Bu gözler benim tüm kainatım.",
+    "note": "Coraline dünyasında bile düğmeler senin gözlerin kadar parıldayamaz. Bu gözler benim tüm kainatım.",
+    "coraline_chapter": "Sonsuz Bağımız",
+    "category": "sweet-moments",
+    "device": "Nothing A063",
+    "gps": null,
+    "width": 3072,
+    "height": 4096,
+    "eyes": [
+      {
+        "x": 42.6,
+        "y": 86.8
+      },
+      {
+        "x": 51.88,
+        "y": 86.8
+      }
+    ],
+    "thumb": "images/thumbs/memory-28.webp",
+    "optimized": "images/optimized/memory-28.webp",
+    "lat": 41.0263,
+    "lng": 28.9732,
+    "secretMessage": "Coraline Other World'ü aradı, ben ise sende tüm dünyayı buldum.",
+    "secretRune": "🖤",
+    "fallback_jpg": "images/memory-28.jpg",
+    "location_name": "Galata Bereketzade Sokağı",
+    "original": "images/memory-28.jpg"
+  },
+  {
+    "id": 29,
+    "filename": "images/memory-29.webp",
+    "image": "images/optimized/memory-29.webp",
+    "originalFilename": "IMG_20250621_162156838.jpg",
+    "date": "21 Haziran 2025",
+    "rawDate": "2025:06:21 16:22:00",
+    "location": "Galata",
+    "title": "Büyülü Bir Gülüş",
+    "caption": "Bir tebessümünle kalbimin karanlık köşelerine güneş doğuran güzeller güzeli sevgilim.",
+    "note": "Bir tebessümünle kalbimin karanlık köşelerine güneş doğuran güzeller güzeli sevgilim.",
+    "coraline_chapter": "Sonsuz Bağımız",
+    "category": "sweet-moments",
+    "device": "Nothing A063",
+    "gps": null,
+    "width": 3072,
+    "height": 4096,
+    "eyes": [
+      {
+        "x": 25.21,
+        "y": 57.34
+      },
+      {
+        "x": 28.23,
+        "y": 57.34
+      }
+    ],
+    "thumb": "images/thumbs/memory-29.webp",
+    "optimized": "images/optimized/memory-29.webp",
+    "lat": 41.0258,
+    "lng": 28.9744,
+    "secretMessage": "Seda & Furkan: Her boyutta, her tünelin ucunda el eleyiz.",
+    "secretRune": "🧵",
+    "fallback_jpg": "images/memory-29.jpg",
+    "location_name": "Galata Kulesi Seyir Terası",
+    "original": "images/memory-29.jpg"
+  },
+  {
+    "id": 30,
+    "filename": "images/memory-30.webp",
+    "image": "images/optimized/memory-30.webp",
+    "originalFilename": "IMG_20250621_162316400.jpg",
+    "date": "21 Haziran 2025",
+    "rawDate": "2025:06:21 16:23:18",
+    "location": "Beyoğlu",
+    "title": "Sonsuz Bağ",
+    "caption": "Birbirimize sımsıkı bağlıyız; hiçbir güç bu aşkın düğümünü çözemez Seda'm.",
+    "note": "Birbirimize sımsıkı bağlıyız; hiçbir güç bu aşkın düğümünü çözemez Seda'm.",
+    "coraline_chapter": "Sonsuz Bağımız",
+    "category": "sweet-moments",
+    "device": "Nothing A063",
+    "gps": null,
+    "width": 3456,
+    "height": 4608,
+    "eyes": [
+      {
+        "x": 40.0,
+        "y": 45.7
+      },
+      {
+        "x": 51.15,
+        "y": 46.41
+      }
+    ],
+    "thumb": "images/thumbs/memory-30.webp",
+    "optimized": "images/optimized/memory-30.webp",
+    "lat": 41.0342,
+    "lng": 28.9765,
+    "secretMessage": "Sen güldüğünde içimde binlerce mavi ateşböceği havalanıyor.",
+    "secretRune": "🪡",
+    "fallback_jpg": "images/memory-30.jpg",
+    "location_name": "Beyoğlu Çiçek Pasajı",
+    "original": "images/memory-30.jpg"
+  },
+  {
+    "id": 31,
+    "filename": "images/memory-31.webp",
+    "image": "images/optimized/memory-31.webp",
+    "originalFilename": "IMG_20250621_170200473.jpg",
+    "date": "21 Haziran 2025",
+    "rawDate": "2025:06:21 17:02:02",
+    "location": "Taksim",
+    "title": "Büyüleyici Bir Anı",
+    "caption": "Kalabalıkların ortasında tek gördüğüm sendin. Bütün dünya silindi, sadece sen kaldın.",
+    "note": "Kalabalıkların ortasında tek gördüğüm sendin. Bütün dünya silindi, sadece sen kaldın.",
+    "coraline_chapter": "Sonsuz Bağımız",
+    "category": "sweet-moments",
+    "device": "Nothing A063",
+    "gps": null,
+    "width": 4096,
+    "height": 3072,
+    "eyes": [
+      {
+        "x": 76.77,
+        "y": 78.59
+      },
+      {
+        "x": 81.15,
+        "y": 78.59
+      }
+    ],
+    "thumb": "images/thumbs/memory-31.webp",
+    "optimized": "images/optimized/memory-31.webp",
+    "lat": 41.0384,
+    "lng": 28.9875,
+    "secretMessage": "Seda'm, senin gözlerinde kaybolmak bu evrenin en güzel büyüsü...",
+    "secretRune": "👁️",
+    "fallback_jpg": "images/memory-31.jpg",
+    "location_name": "Taksim Gezi Parkı",
+    "original": "images/memory-31.jpg"
+  },
+  {
+    "id": 32,
+    "filename": "images/memory-32.webp",
+    "image": "images/optimized/memory-32.webp",
+    "originalFilename": "IMG_20250621_171025665.jpg",
+    "date": "21 Haziran 2025",
+    "rawDate": "2025:06:21 17:10:25",
+    "location": "İstiklal Caddesi",
+    "title": "Rüya Gibi Saatler",
+    "caption": "Tramvay sesi, sokak müzisyenleri ve senin parıldayan gözlerin... Unutulmaz bir haziran gecesi.",
+    "note": "Tramvay sesi, sokak müzisyenleri ve senin parıldayan gözlerin... Unutulmaz bir haziran gecesi.",
+    "coraline_chapter": "Sonsuz Bağımız",
+    "category": "adventures",
+    "device": "Nothing A063",
+    "gps": null,
+    "width": 4096,
+    "height": 3072,
+    "eyes": [
+      {
+        "x": 57.03,
+        "y": 31.46
+      },
+      {
+        "x": 61.88,
+        "y": 31.46
+      }
+    ],
+    "thumb": "images/thumbs/memory-32.webp",
+    "optimized": "images/optimized/memory-32.webp",
+    "lat": 41.0337,
+    "lng": 28.9779,
+    "secretMessage": "Gizli kapının ardındaki bütün yıldızlar senin için parıldıyor sevgilim.",
+    "secretRune": "🌙",
+    "fallback_jpg": "images/memory-32.jpg",
+    "location_name": "İstiklal Caddesi Nostalji",
+    "original": "images/memory-32.jpg"
+  },
+  {
+    "id": 33,
+    "filename": "images/memory-33.webp",
+    "image": "images/optimized/memory-33.webp",
+    "originalFilename": "IMG_20250621_171230572.jpg",
+    "date": "21 Haziran 2025",
+    "rawDate": "2025:06:21 17:12:31",
+    "location": "Beyoğlu",
+    "title": "Kalp Atışlarımız",
+    "caption": "Birlikte geçen her saniyeyi zihnime altın iğnelerle işliyorum; hiçbir hatıramız solmasın diye.",
+    "note": "Birlikte geçen her saniyeyi zihnime altın iğnelerle işliyorum; hiçbir hatıramız solmasın diye.",
+    "coraline_chapter": "Sonsuz Bağımız",
+    "category": "sweet-moments",
+    "device": "Nothing A063",
+    "gps": null,
+    "width": 4608,
+    "height": 3456,
+    "eyes": [
+      {
+        "x": 33.12,
+        "y": 44.3
+      },
+      {
+        "x": 46.67,
+        "y": 43.98
+      }
+    ],
+    "thumb": "images/thumbs/memory-33.webp",
+    "optimized": "images/optimized/memory-33.webp",
+    "lat": 41.0298,
+    "lng": 28.9748,
+    "secretMessage": "Altın bir iğneyle kalbime işlendin; hiçbir fırtına koparamaz.",
+    "secretRune": "🌀",
+    "fallback_jpg": "images/memory-33.jpg",
+    "location_name": "Beyoğlu Asmalımescit",
+    "original": "images/memory-33.jpg"
+  },
+  {
+    "id": 34,
+    "filename": "images/memory-34.webp",
+    "image": "images/optimized/memory-34.webp",
+    "originalFilename": "IMG_20250621_181923889.jpg",
+    "date": "21 Haziran 2025",
+    "rawDate": "2025:06:21 18:19:25",
+    "location": "Haliç",
+    "title": "Akşam Güneşiyle Taçlanan Aşk",
+    "caption": "Haliç'in altın rengi suyuna vuran silüetin... Coraline masalının en güzel prensesi sensin.",
+    "note": "Haliç'in altın rengi suyuna vuran silüetin... Coraline masalının en güzel prensesi sensin.",
+    "coraline_chapter": "Sonsuz Bağımız",
+    "category": "magical-nights",
+    "device": "Nothing A063",
+    "gps": null,
+    "width": 4608,
+    "height": 3456,
+    "eyes": [
+      {
+        "x": 28.96,
+        "y": 45.23
+      },
+      {
+        "x": 41.77,
+        "y": 49.53
+      }
+    ],
+    "thumb": "images/thumbs/memory-34.webp",
+    "optimized": "images/optimized/memory-34.webp",
+    "lat": 41.0318,
+    "lng": 28.9489,
+    "secretMessage": "Gören Taş bile senin bu saf ve benzersiz güzelliğini tarif edemez.",
+    "secretRune": "🗝️",
+    "fallback_jpg": "images/memory-34.jpg",
+    "location_name": "Haliç Balat Sahili",
+    "original": "images/memory-34.jpg"
+  },
+  {
+    "id": 35,
+    "filename": "images/memory-35.webp",
+    "image": "images/optimized/memory-35.webp",
+    "originalFilename": "IMG_20250622_200224203.jpg",
+    "date": "22 Haziran 2025",
+    "rawDate": "2025:06:22 20:02:26",
+    "location": "Kandilli Sahili",
+    "title": "Göz Kamaştıran Güzellik",
+    "caption": "Sana her baktığımda ilk günkü heyecanın içimde alevlenmesi benim en büyük şansım Seda'm.",
+    "note": "Sana her baktığımda ilk günkü heyecanın içimde alevlenmesi benim en büyük şansım Seda'm.",
+    "coraline_chapter": "Sonsuz Bağımız",
+    "category": "sweet-moments",
+    "device": "Nothing A063",
+    "gps": null,
+    "width": 4608,
+    "height": 3456,
+    "eyes": [
+      {
+        "x": 76.95,
+        "y": 51.35
+      },
+      {
+        "x": 85.23,
+        "y": 50.21
+      }
+    ],
+    "thumb": "images/thumbs/memory-35.webp",
+    "optimized": "images/optimized/memory-35.webp",
+    "lat": 41.0744,
+    "lng": 29.0583,
+    "secretMessage": "Pembe Saray'ın en zarif prensesi sensin Seda'm.",
+    "secretRune": "✨",
+    "fallback_jpg": "images/memory-35.jpg",
+    "location_name": "Kandilli İskelesi & Sahili",
+    "original": "images/memory-35.jpg"
+  },
+  {
+    "id": 36,
+    "filename": "images/memory-36.webp",
+    "image": "images/optimized/memory-36.webp",
+    "originalFilename": "IMG_20250622_203808963.jpg",
+    "date": "22 Haziran 2025",
+    "rawDate": "2025:06:22 20:38:10",
+    "location": "Boğaziçi",
+    "title": "Köprü Işıkları & Biz",
+    "caption": "Boğazın iki yakasını bağlayan köprü gibi, kalplerimiz de kopmaz bir iplikle birbirine bağlı.",
+    "note": "Boğazın iki yakasını bağlayan köprü gibi, kalplerimiz de kopmaz bir iplikle birbirine bağlı.",
+    "coraline_chapter": "Sonsuz Bağımız",
+    "category": "magical-nights",
+    "device": "Nothing A063",
+    "gps": null,
+    "width": 4608,
+    "height": 3456,
+    "eyes": [
+      {
+        "x": 34.79,
+        "y": 55.39
+      },
+      {
+        "x": 48.54,
+        "y": 55.62
+      }
+    ],
+    "thumb": "images/thumbs/memory-36.webp",
+    "optimized": "images/optimized/memory-36.webp",
+    "lat": 41.0489,
+    "lng": 29.0345,
+    "secretMessage": "Gözlerindeki siyah düğmeler bile senin parıltını söndüremez.",
+    "secretRune": "🖤",
+    "fallback_jpg": "images/memory-36.jpg",
+    "location_name": "Ortaköy Boğaziçi Köprüsü Manzarası",
+    "original": "images/memory-36.jpg"
+  },
+  {
+    "id": 37,
+    "filename": "images/memory-37.webp",
+    "image": "images/optimized/memory-37.webp",
+    "originalFilename": "IMG_20250628_171736264.jpg",
+    "date": "28 Haziran 2025",
+    "rawDate": "2025:06:28 17:17:36",
+    "location": "Yıldız Parkı",
+    "title": "Sonsuzluğa Atılan Düğüm",
+    "caption": "Bizim hikayemiz burada bitmiyor; Coraline kapısının ardındaki sonsuz evren gibi hep yenilenecek ve büyüyecek sevgilim.",
+    "note": "Bizim hikayemiz burada bitmiyor; Coraline kapısının ardındaki sonsuz evren gibi hep yenilenecek ve büyüyecek sevgilim.",
+    "coraline_chapter": "Sonsuz Bağımız",
+    "category": "adventures",
+    "device": "Nothing A063",
+    "gps": null,
+    "width": 4608,
+    "height": 3456,
+    "eyes": [
+      {
+        "x": 61.88,
+        "y": 38.02
+      },
+      {
+        "x": 71.95,
+        "y": 37.19
+      }
+    ],
+    "thumb": "images/thumbs/memory-37.webp",
+    "optimized": "images/optimized/memory-37.webp",
+    "lat": 41.0494,
+    "lng": 29.0152,
+    "secretMessage": "Birlikte attığımız her adım, sonsuzluğa doğru yazılmış bir mısra.",
+    "secretRune": "🧵",
+    "fallback_jpg": "images/memory-37.jpg",
+    "location_name": "Yıldız Parkı Çadır Köşkü",
+    "original": "images/memory-37.jpg"
+  },
+  {
+    "id": 38,
+    "filename": "images/memory-38.webp",
+    "image": "images/optimized/memory-38.webp",
+    "originalFilename": "IMG_20250711_214729797.jpg",
+    "date": "11 Temmuz 2025",
+    "rawDate": "2025:07:11 21:47:31",
+    "location": "Çamlıca Tepesi",
+    "title": "Yıldızlı Gecenin Mührü",
+    "caption": "Temmuz gecesinin ılık melteminde, ışıl ışıl gözlerine baktığımda Coraline'in kapısının ardındaki tüm evrenlerin en güzeli sendin Seda'm.",
+    "note": "Temmuz gecesinin ılık melteminde, ışıl ışıl gözlerine baktığımda Coraline'in kapısının ardındaki tüm evrenlerin en güzeli sendin Seda'm.",
+    "coraline_chapter": "Sonsuz Bağımız",
+    "category": "magical-nights",
+    "device": "Nothing A063",
+    "gps": null,
+    "width": 4608,
+    "height": 3456,
+    "eyes": [
+      {
+        "x": 54.77,
+        "y": 37.92
+      },
+      {
+        "x": 65.86,
+        "y": 35.94
+      }
+    ],
+    "thumb": "images/thumbs/memory-38.webp",
+    "optimized": "images/optimized/memory-38.webp",
+    "lat": 41.0269,
+    "lng": 29.0681,
+    "secretMessage": "Coraline Other World'ü aradı, ben ise sende tüm dünyayı buldum.",
+    "secretRune": "🪡",
+    "fallback_jpg": "images/memory-38.jpg",
+    "location_name": "Büyük Çamlıca Tepesi",
+    "original": "images/memory-38.jpg"
+  },
+  {
+    "id": 39,
+    "filename": "images/memory-39.webp",
+    "image": "images/optimized/memory-39.webp",
+    "originalFilename": "IMG_20250712_181316410.jpg",
+    "date": "12 Temmuz 2025",
+    "rawDate": "2025:07:12 18:13:18",
+    "location": "Gizli Bahçe",
+    "title": "Sonsuzluğun Eşiğindeki Yeminimiz",
+    "caption": "Kalbinin anahtarı boynumda, aşkın ruhumda mühürlü. Her boyutta, her zamanda ve sonsuza dek yalnızca seninim Seda'm.",
+    "note": "Kalbinin anahtarı boynumda, aşkın ruhumda mühürlü. Her boyutta, her zamanda ve sonsuza dek yalnızca seninim Seda'm.",
+    "coraline_chapter": "Sonsuz Bağımız",
+    "category": "sweet-moments",
+    "device": "Nothing A063",
+    "gps": null,
+    "width": 3072,
+    "height": 4096,
+    "eyes": [
+      {
+        "x": 44.0,
+        "y": 35.0
+      },
+      {
+        "x": 56.0,
+        "y": 35.0
+      }
+    ],
+    "thumb": "images/thumbs/memory-39.webp",
+    "optimized": "images/optimized/memory-39.webp",
+    "lat": 41.0131,
+    "lng": 28.9814,
+    "secretMessage": "Seda & Furkan: Her boyutta, her tünelin ucunda el eleyiz.",
+    "secretRune": "👁️",
+    "fallback_jpg": "images/memory-39.jpg",
+    "location_name": "Gülhane Parkı Tarihi Bahçe",
+    "original": "images/memory-39.jpg"
+  }
 ]

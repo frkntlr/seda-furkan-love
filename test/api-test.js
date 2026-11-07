@@ -57,13 +57,48 @@ function testStats() {
   console.log(`  ✅ İstatistikler: ${stats.firstMemoryDate} -> ${stats.latestMemoryDate}`);
 }
 
+function testWebPAndCoordinates() {
+  console.log('🧪 [Test 5] WebP optimizasyonu, Göz koordinatları ve Harita testi...');
+  const memories = memoryService.getMemories();
+  const publicDir = path.join(__dirname, '..', 'public');
+
+  memories.forEach((m) => {
+    // 1. WebP dosya varlığı
+    assert.ok(m.thumb, `thumb alanı eksik: id=${m.id}`);
+    assert.ok(m.optimized, `optimized alanı eksik: id=${m.id}`);
+    const thumbPath = path.join(publicDir, m.thumb);
+    const optPath = path.join(publicDir, m.optimized);
+    assert.ok(fs.existsSync(thumbPath), `Thumbnail bulunamadı: ${m.thumb}`);
+    assert.ok(fs.existsSync(optPath), `Optimize görsel bulunamadı: ${m.optimized}`);
+
+    // 2. Göz koordinatları doğrulama
+    assert.ok(Array.isArray(m.eyes), `eyes dizi olmalı: id=${m.id}`);
+    assert.strictEqual(m.eyes.length, 2, `2 göz koordinatı olmalı: id=${m.id}`);
+    m.eyes.forEach((eye, i) => {
+      assert.strictEqual(typeof eye.x, 'number', `eyes[${i}].x sayı olmalı`);
+      assert.strictEqual(typeof eye.y, 'number', `eyes[${i}].y sayı olmalı`);
+      assert.ok(eye.x >= 0 && eye.x <= 100, `eyes[${i}].x %0-100 aralığında olmalı: ${eye.x}`);
+      assert.ok(eye.y >= 0 && eye.y <= 100, `eyes[${i}].y %0-100 aralığında olmalı: ${eye.y}`);
+    });
+
+    // 3. Harita GPS ve lokasyon doğrulama
+    assert.strictEqual(typeof m.lat, 'number', `lat sayı olmalı: id=${m.id}`);
+    assert.strictEqual(typeof m.lng, 'number', `lng sayı olmalı: id=${m.id}`);
+    assert.ok(m.location_name && m.location_name.length > 2, `location_name geçerli olmalı: id=${m.id}`);
+    assert.ok(m.lat >= 40.0 && m.lat <= 42.0, `İstanbul enlem aralığında olmalı: ${m.lat}`);
+    assert.ok(m.lng >= 28.0 && m.lng <= 30.0, `İstanbul boylam aralığında olmalı: ${m.lng}`);
+  });
+  console.log(`  ✅ Tüm 39 anının WebP görselleri, Göz koordinatları ve GPS harita verisi eksiksiz!`);
+}
+
 function runAllTests() {
   console.log('🚀 Coraline Aşk Sitesi - Test Paketi Başlatılıyor...\n');
   testMemoryService();
   testAssetExistence();
   testChapterGrouping();
   testStats();
-  console.log('\n✨ BÜTÜN TESTLER BAŞARIYLA GEÇTİ (4/4)!');
+  testWebPAndCoordinates();
+  console.log('\n✨ BÜTÜN TESTLER BAŞARIYLA GEÇTİ (5/5)!');
 }
 
 runAllTests();

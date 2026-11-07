@@ -17,36 +17,54 @@ Gözlerin, Coraline'in aradığı o masum ruhların kurtuluşu gibi berrak ve ı
 
 ---
 
-## 🔘 II. Düğme Gözler ve Kalbimin Anahtarı
+## 🔘 II. Gerçek Bakış: Düğme Gözlerin Aşk Metaforu
 
 Bize parıldayan siyah düğmeler ve gümüş iplikler uzatsalar, *"Gözlerinizi bu parlak düğmelerle dikin ki dünyanın hüznünü görmeyin, sadece kusursuz bir yanılsamaya inanın"* deseler... Onlara başımı dimdik çevirir ve tereddütsüz derim ki:
 
 > *“Ben Seda’mın gözlerine bir kere baktım; o gözlerdeki bir damla yorgunluğu da, bir tebessüm ışıltısını da dünyanın bütün kusursuz yalanlarına değişmem.”*
 
-Benim kalbimin anahtarı; boynunda siyah kurdeleyle taşınan, ucu düğme motifli o kadim ve gizemli anahtardır. Ve o anahtarın açtığı tek kilit, senin kalbindeki saklı sandıktır. 
+Coraline masalında düğme gözler bir tuzaktı; ruhları hapsetmek için dikilirdi. Fakat bizim aşkımızın evreninde "Düğme Gözler" bambaşka, ilahi bir anlama bürünür:  
+Dış dünyanın tüm gürültüsüne, kibrine ve sahteliğine gözlerimizi sımsıkı kapamak; bakışlarımızı yalnızca birbirimizin kalbine sabitlemektir. Gözlerime parlak obsidyen düğmeler dikseler bile, benim zihnimin perdesinde ve ruhumun retinasında daima Seda'nın silüeti, Seda'nın gülüşü parıldayacaktır. 
 
-Bizim gözlerimiz düğme değil Seda; bizim gözlerimiz birbirimize baktığında evreni baştan yaratan, birlikte gülmeyi, birlikte ağlamayı ve birlikte yaşlanmayı seçen iki canlı pencere. Ellerimiz pamuktan örülmüş kukla iplerini değil; birbirimizin parmaklarını hiç bırakmamacasına kavramak için var. Bizim sevgimiz bir yanılsama değil; sabahın ilk ışığında kahve içerken göz göze geldiğimiz o sıcacık an, yağmur altında koştururken yüzümüze vuran rüzgâr ve sokak lambalarının loş ışığında birbirimize sarıldığımızda hissettiğimiz kalp atışımızdır.
-
----
-
-## 🔮 III. Zamanın ve Boyutların Ötesinde: Anılarımızın Haritası
-
-Bizim hikayemiz sıradan bir takvim yaprağı değil; Coraline'in elindeki o yeşil, ortası delik "Gören Taş" (Seeing Stone) ile bakıldığında karanlıkta yıldız gibi parıldayan kutsal anılar hazinesidir:
-
-* **25 Mart 2025 | İlk Temas & Tünelin Açılışı:**  
-  Kaderin görünmez ipliklerinin bizi birbirimize ilk kez bağladığı o büyülü akşam. Tünelin ucunda beliren o ilk tebessüm, ömrümün en güzel yolculuğunun başlangıcıydı.
-* **05 - 06 Nisan 2025 | Baharın İlk Fısıltısı:**  
-  Baharın sokaklara indiği, yan yana yürüdüğümüz kaldırımların masal patikalarına dönüştüğü anlar. Sesinin tonundaki huzur, kalbimin en sevdiği melodi oldu.
-* **13 - 26 Nisan 2025 | Donan Zaman ve Büyülü Bakışlar:**  
-  İkindilerin turuncu ışığında gözlerimizin kenetlendiği, zamanın saniyelerini unuttuğu nisan günleri. Fotoğraf karelerine sığmayan o derin bağlılık.
-* **03 Mayıs - 28 Haziran 2025 | Sonsuzluğa Uzanan Yaz Bahçesi:**  
-  Coraline'in öteki bahçesinde gökyüzünden bakıldığında kendi yüzünü gördüğü o büyülü çiçek bahçesi gibi; benim baktığım her gökyüzünde, her çiçekte ve her gün batımında yalnızca senin siluetin belirdi.
-
-O yeşil taştan sana baktığımda gördüğüm şey; sadece bir sevgili değil, ömrüme bahşedilmiş en kıymetli hazine, ruhumun ebedi eşidir.
+Bizim gözlerimiz birbirine baktığında evreni baştan yaratan, birlikte gülmeyi, birlikte ağlamayı ve birlikte yaşlanmayı seçen iki canlı nur penceresidir. Ellerimiz kukla iplerini değil; birbirimizin parmaklarını hiç bırakmamacasına kenetlemek için yaratılmıştır.
 
 ---
 
-## 🐈‍⬛ IV. Her Boyutta ve Her Zamanda Aşkımız
+## 🔮 III. Gören Taşın Gizemi ve Fotoğraflardaki Gizli Fısıltılar
+
+Coraline'in elindeki o yeşil, ortası delik **"Gören Taş" (Seeing Stone)** sıradan fanilerin göremediği gizli hakikatleri açığa çıkarırdı. Dünyanın sisleri ve yalanları o taşa çarpınca erir; yalnızca kalbi saf olanların ışığı karanlıkta parıldardı.
+
+İşte bizim paylaştığımız 39 hatıra, o yeşil taşın deliğinden bakıldığında birer fotoğraftan çok daha fazlasına dönüşür:
+- O taştan baktığında, Kadıköy vapurunda yüzüne vuran tuzlu rüzgarın ardında sana duyduğum sonsuz hayranlığı görürsün.
+- O taştan baktığında, Galata Kulesi'nin dibinde çektirdiğimiz karede zamana meydan okuyan iki kader çizgisini görürsün.
+- O taştan baktığında, gecenin bir yarısı Üsküdar sahilinde Kız Kulesi'ne fısıldadığımız gizli duaların göğe nasıl altın ipliklerle yükseldiğini görürsün.
+
+Fotoğraflarımızdaki her piksel, yeşil taşın yeşil ışıltısıyla yıkandığında tek bir gerçeği haykırır: **Seda, sen benim bu hayattaki tek gerçeğim ve ömrümün en büyük mucizesisin.**
+
+---
+
+## 🗺️ IV. Aşkımızın Coğrafyası (Coraline Gece Haritası)
+
+İstanbul, yedi tepeli kadim bir şehir olmaktan çıkıp Seda ve Furkan'ın aşk adımlarıyla örülmüş büyülü bir gece haritasına dönüştü. Şehrin her caddesinde bizim ayak izlerimiz, her sahilinde yankılanan kahkahalarımız saklı:
+
+1. **Kadıköy & Moda Sahili (Kapının İlk Aralanışı):**  
+   25 Mart 2025 gecesi... Soğuk deniz meltemi, birbirine değen parmak uçlarımız ve kalbimin ritmini ilk defa değiştiren o büyülü bakış. Küçük gizli kapının ilk anahtarı Moda rıhtımında çevrildi.
+2. **Fenerbahçe Parkı & Kalamış Marina (Baharın Çiçek Açışı):**  
+   Nisan güneşiyle yeşeren çimenler, yan yana atılan adımlar. Birlikte yürüdüğümüz o patikalar, pembe çiçekli dallar altında sonsuz bir tünel gibi uzandı önümüzde.
+3. **Emirgan Korusu & Boğaz Kıyısı (Lalelerin Masalı):**  
+   Baharın binbir rengi laleler arasında bile yalnızca senin zarafetinin ışıldadığı o nisan ikindisi. Boğaz'ın lacivert sularına vuran silüetin, hafızama kazınan en asil tablo oldu.
+4. **Karaköy, Beşiktaş & Galata Köprüsü (Tarihin Şahitliği):**  
+   Tarihi kemerlerin, arnavut kaldırımlarının ve Galata Kulesi'nin loş gölgesinde göz göze kaldığımız o unutulmaz anlar. Şehrin tüm karmaşası sustu; sadece senin nefesin duyuldu.
+5. **Cihangir, İstiklal & Beyoğlu (Kalabalıkta Tek Ruh):**  
+   Yaz dönümünün en uzun gününde, binlerce insanın aktığı caddelerde birbirimizin eline kenetlendik. Dünya bir yana, biz bir yanaydık. Kalabalıkların içinde birbirini bulan iki ruhun dansıydı bu.
+6. **Adalar Rotası: Heybeliada & Büyükada (Denizin ve Martıların Şarkısı):**  
+   8 Haziran vapur yolculuğu, çay bardaklarının buğusu, bisiklet zilleri ve saçlarını savuran ada rüzgarı. Zamanın tamamen durduğu, adeta Öteki Dünya'nın en huzurlu bahçesine sığındığımız bir gündü.
+7. **Kuzguncuk Bostanı & Çamlıca Tepesi (Yıldızlı Gece Mührü):**  
+   Pembe Saray'ın masalsı evlerini andıran Kuzguncuk sokakları ve Temmuz gecesinde İstanbul'u ayaklarımızın altına seren Çamlıca Tepesi. Gökyüzündeki tüm yıldızlar o gece aşkımıza şahitlik etmek için sıraya girdi.
+
+---
+
+## 🐈‍⬛ V. Her Boyutta ve Her Zamanda Ruh İkizim
 
 Bir paralel evrende sen yağmurlu bir kasabada sarı yağmurluğu ve mavi saçlarıyla dünyayı keşfeden o cesur kız olsan; ben kapının eşiğinde seni gölgelerden koruyan, adımlarını kollayan o sadık kara kedi olurdum.
 
@@ -58,7 +76,7 @@ Yıllar geçse de, saçlarımıza karlar yağsa da, dünya bin bir türlü gür�
 
 ---
 
-## 🕯️ V. Sonsuzluk Yemini
+## 🕯️ VI. Sonsuzluk Yemini
 
 Seda, kalbimin biricik sultanı;  
 Karanlığın içinde parlayan yıldızların ve boynumdaki o gizli anahtarın huzurunda yemin ederim ki:

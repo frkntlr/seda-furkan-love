@@ -1,6 +1,7 @@
 /**
- * Coraline İnteraktif Galeri & Polaroid Modalı
- * Stop-motion polaroid stili, filtreleme ve modal gezinimi
+ * Coraline İnteraktif Galeri - Seda & Furkan Aşk Evreni
+ * Göz Hizalı Düğme Gözler, Ahşap Mandallar & Stop-Motion Polaroidler
+ * Demir Kafes: <300 satır, fonksiyonlar <40 satır
  */
 
 class CoralineGallery {
@@ -10,8 +11,6 @@ class CoralineGallery {
     this.currentIndex = 0;
     this.grid = document.getElementById('gallery-grid');
     this.modal = document.getElementById('memory-modal');
-    this.threadSvg = document.getElementById('thread-svg');
-
     this.init();
   }
 
@@ -28,14 +27,14 @@ class CoralineGallery {
       this.memories = await res.json();
       this.filteredMemories = [...this.memories];
     } catch (err) {
-      console.error('Memories fetch error:', err);
+      console.error('[CoralineGallery] Veri okuma hatası:', err);
     }
   }
 
   bindFilters() {
     const filterButtons = document.querySelectorAll('.filter-chip');
     filterButtons.forEach(btn => {
-      btn.addEventListener('click', (e) => {
+      btn.addEventListener('click', () => {
         filterButtons.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         const cat = btn.getAttribute('data-category');
@@ -53,39 +52,63 @@ class CoralineGallery {
     this.render();
   }
 
+  renderEyesHtml(eyes) {
+    const list = (eyes && eyes.length > 0) ? eyes : [
+      { x: 42.5, y: 38.0 }, { x: 57.5, y: 38.0 }
+    ];
+    return list.map((eye, i) => `
+      <div class="coraline-button-eye" style="left: ${eye.x}%; top: ${eye.y}%; animation-delay: ${i * 0.3}s;">
+        <div class="button-eye-inner">
+          <span class="b-hole h1"></span><span class="b-hole h2"></span>
+          <span class="b-hole h3"></span><span class="b-hole h4"></span>
+          <div class="thread-cross"></div>
+        </div>
+      </div>
+    `).join('');
+  }
+
+  renderCard(item, index) {
+    const card = document.createElement('div');
+    card.className = 'polaroid-card puppet-wobble';
+    const tilt = (index % 5 - 2) * 2.2;
+    card.style.setProperty('--card-tilt', `${tilt}deg`);
+    const thumbSrc = item.thumb || item.image || item.filename;
+
+    card.innerHTML = `
+      <div class="polaroid-mandal" title="Coraline Dikiş Mandalı">
+        <div class="wooden-peg"><span class="peg-spring"></span></div>
+      </div>
+      <div class="polaroid-image-wrapper">
+        <img src="${thumbSrc}" alt="${item.title}" loading="lazy" class="polaroid-img" />
+        <div class="button-eyes-overlay">
+          ${this.renderEyesHtml(item.eyes)}
+        </div>
+        <div class="secret-rune-overlay">
+          <span class="secret-rune-icon">${item.secretRune || '✨'}</span>
+          <p class="secret-rune-note">"${item.secretMessage || ''}"</p>
+          <span class="secret-rune-tag">🗝️ Furkan'ın Gizli Sırrı</span>
+        </div>
+      </div>
+      <div class="polaroid-caption">
+        <h3 class="polaroid-title">${item.title}</h3>
+        <p class="polaroid-date">🕸️ ${item.date} • ${item.location}</p>
+      </div>
+    `;
+
+    card.addEventListener('click', (e) => {
+      // Gören taş modu aktifken sırrı tıkla aç veya modala git
+      this.openModal(index);
+    });
+
+    return card;
+  }
+
   render() {
     if (!this.grid) return;
     this.grid.innerHTML = '';
-
     this.filteredMemories.forEach((item, index) => {
-      const card = document.createElement('div');
-      card.className = 'polaroid-card';
-      const tilt = (index % 5 - 2) * 2.2;
-      card.style.setProperty('--card-tilt', `${tilt}deg`);
-      const imgSrc = item.image || item.filename;
-
-      card.innerHTML = `
-        <div class="polaroid-pin">
-          <span class="button-pin"></span>
-        </div>
-        <div class="polaroid-image-wrapper">
-          <img src="${imgSrc}" alt="${item.title}" loading="lazy" class="polaroid-img" />
-          <div class="button-eyes-overlay">
-            <span class="btn-eye left-eye"></span>
-            <span class="btn-eye right-eye"></span>
-          </div>
-        </div>
-        <div class="polaroid-caption">
-          <h3 class="polaroid-title">${item.title}</h3>
-          <p class="polaroid-date">🕸️ ${item.date} • ${item.location}</p>
-        </div>
-      `;
-
-      card.addEventListener('click', () => this.openModal(index));
-      this.grid.appendChild(card);
+      this.grid.appendChild(this.renderCard(item, index));
     });
-
-    this.drawThread();
   }
 
   openModal(index) {
@@ -93,11 +116,24 @@ class CoralineGallery {
     const item = this.filteredMemories[this.currentIndex];
     if (!item || !this.modal) return;
 
-    document.getElementById('modal-img').src = item.image || item.filename;
+    const optSrc = item.optimized || item.image || item.filename;
+    document.getElementById('modal-img').src = optSrc;
     document.getElementById('modal-title').textContent = item.title;
     document.getElementById('modal-date').textContent = item.date;
-    document.getElementById('modal-location').textContent = item.location;
+    const locText = item.location_name ? `${item.location_name}` : item.location;
+    document.getElementById('modal-location').textContent = `📍 ${locText}`;
     document.getElementById('modal-note').textContent = `"${item.note || item.caption}"`;
+
+    const modalMedia = this.modal.querySelector('.modal-media');
+    if (modalMedia) {
+      let eyeOverlay = modalMedia.querySelector('.button-eyes-overlay');
+      if (!eyeOverlay) {
+        eyeOverlay = document.createElement('div');
+        eyeOverlay.className = 'button-eyes-overlay';
+        modalMedia.appendChild(eyeOverlay);
+      }
+      eyeOverlay.innerHTML = this.renderEyesHtml(item.eyes);
+    }
 
     this.modal.classList.add('modal-visible');
     document.body.style.overflow = 'hidden';
@@ -136,43 +172,6 @@ class CoralineGallery {
       if (e.key === 'ArrowLeft') this.navigateModal(-1);
       if (e.key === 'ArrowRight') this.navigateModal(1);
     });
-  }
-
-  drawThread() {
-    if (!this.threadSvg) return;
-    const cards = document.querySelectorAll('.polaroid-card');
-    if (cards.length < 2) {
-      this.threadSvg.innerHTML = '';
-      return;
-    }
-
-    const rectGrid = this.grid.getBoundingClientRect();
-    this.threadSvg.setAttribute('width', `${this.grid.scrollWidth}`);
-    this.threadSvg.setAttribute('height', `${this.grid.scrollHeight}`);
-
-    let pathD = '';
-    cards.forEach((card, idx) => {
-      const pin = card.querySelector('.polaroid-pin');
-      if (!pin) return;
-      const pRect = pin.getBoundingClientRect();
-      const x = pRect.left - rectGrid.left + pRect.width / 2;
-      const y = pRect.top - rectGrid.top + pRect.height / 2;
-
-      if (idx === 0) {
-        pathD += `M ${x} ${y}`;
-      } else {
-        const prev = cards[idx - 1].querySelector('.polaroid-pin').getBoundingClientRect();
-        const px = prev.left - rectGrid.left + prev.width / 2;
-        const py = prev.top - rectGrid.top + prev.height / 2;
-        const cx = (px + x) / 2;
-        const cy = Math.min(py, y) + 40;
-        pathD += ` Q ${cx} ${cy} ${x} ${y}`;
-      }
-    });
-
-    this.threadSvg.innerHTML = `
-      <path d="${pathD}" class="golden-thread-path" />
-    `;
   }
 }
 

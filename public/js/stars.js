@@ -1,6 +1,7 @@
 /**
- * Coraline Other World - Yıldız & Ateşböceği Canvas Motoru
- * Gece mavisi gökyüzü, süzülen ateşböcekleri ve sihirli parçacıklar
+ * Coraline Other World - Yıldız, Ateşböceği & Sihirli Kıvılcım Motoru
+ * Fare/dokunuşu takip eden ateşböcekleri ve çift renkli parçacıklar
+ * Demir Kafes: <300 satır, fonksiyonlar <40 satır
  */
 
 class CoralineSky {
@@ -11,9 +12,9 @@ class CoralineSky {
     this.stars = [];
     this.fireflies = [];
     this.sparks = [];
+    this.pointer = { x: -100, y: -100, active: false };
     this.width = 0;
     this.height = 0;
-    this.animId = null;
 
     this.init();
   }
@@ -21,8 +22,8 @@ class CoralineSky {
   init() {
     this.resize();
     window.addEventListener('resize', () => this.resize());
-    this.createStars(90);
-    this.createFireflies(25);
+    this.createStars(85);
+    this.createFireflies(30);
     this.bindPointer();
     this.loop();
   }
@@ -38,10 +39,10 @@ class CoralineSky {
       this.stars.push({
         x: Math.random() * this.width,
         y: Math.random() * this.height,
-        radius: Math.random() * 1.6 + 0.4,
+        radius: Math.random() * 1.5 + 0.4,
         alpha: Math.random(),
         speed: Math.random() * 0.02 + 0.005,
-        color: Math.random() > 0.4 ? '#00f3ff' : '#e02875'
+        color: Math.random() > 0.45 ? '#00f3ff' : '#ff3388'
       });
     }
   }
@@ -52,32 +53,39 @@ class CoralineSky {
       this.fireflies.push({
         x: Math.random() * this.width,
         y: Math.random() * this.height,
-        radius: Math.random() * 2.5 + 1.2,
-        vx: (Math.random() - 0.5) * 0.8,
-        vy: (Math.random() - 0.5) * 0.8,
+        radius: Math.random() * 2.2 + 1.2,
+        vx: (Math.random() - 0.5) * 0.7,
+        vy: (Math.random() - 0.5) * 0.7,
         glow: Math.random() * Math.PI,
-        color: Math.random() > 0.3 ? '#62ffc4' : '#ffd700'
+        color: Math.random() > 0.4 ? '#39ff14' : '#00f3ff'
       });
     }
   }
 
   bindPointer() {
-    const trigger = (x, y) => this.addSparks(x, y, 6);
-    window.addEventListener('pointermove', (e) => {
-      if (Math.random() > 0.6) trigger(e.clientX, e.clientY);
-    });
+    const trigger = (x, y) => {
+      this.pointer.x = x;
+      this.pointer.y = y;
+      this.pointer.active = true;
+      this.addSparks(x, y, 5);
+    };
+
+    window.addEventListener('pointermove', (e) => trigger(e.clientX, e.clientY));
     window.addEventListener('pointerdown', (e) => trigger(e.clientX, e.clientY));
+    window.addEventListener('pointerleave', () => { this.pointer.active = false; });
   }
 
   addSparks(x, y, count) {
+    const colors = ['#00f3ff', '#ff3388', '#ffd700', '#39ff14'];
     for (let i = 0; i < count; i++) {
       this.sparks.push({
         x, y,
-        vx: (Math.random() - 0.5) * 3,
-        vy: (Math.random() - 0.5) * 3,
+        vx: (Math.random() - 0.5) * 3.5,
+        vy: (Math.random() - 0.5) * 3.5 - 0.5,
         alpha: 1,
-        size: Math.random() * 3 + 1.5,
-        decay: Math.random() * 0.03 + 0.015
+        size: Math.random() * 3 + 1.2,
+        decay: Math.random() * 0.035 + 0.015,
+        color: colors[Math.floor(Math.random() * colors.length)]
       });
     }
   }
@@ -96,6 +104,19 @@ class CoralineSky {
 
   renderFireflies() {
     for (const f of this.fireflies) {
+      // Fareye/dokunmaya nazik yönelim
+      if (this.pointer.active) {
+        const dx = this.pointer.x - f.x;
+        const dy = this.pointer.y - f.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist > 30 && dist < 320) {
+          f.vx += (dx / dist) * 0.04;
+          f.vy += (dy / dist) * 0.04;
+        }
+      }
+
+      f.vx *= 0.98;
+      f.vy *= 0.98;
       f.x += f.vx;
       f.y += f.vy;
       f.glow += 0.04;
@@ -105,10 +126,10 @@ class CoralineSky {
       if (f.y < 0) f.y = this.height;
       if (f.y > this.height) f.y = 0;
 
-      const alpha = 0.4 + Math.sin(f.glow) * 0.4;
+      const alpha = 0.35 + Math.sin(f.glow) * 0.45;
       this.ctx.save();
-      this.ctx.globalAlpha = alpha;
-      this.ctx.shadowBlur = 12;
+      this.ctx.globalAlpha = Math.max(0.1, alpha);
+      this.ctx.shadowBlur = 10;
       this.ctx.shadowColor = f.color;
       this.ctx.fillStyle = f.color;
       this.ctx.beginPath();
@@ -129,9 +150,12 @@ class CoralineSky {
         this.sparks.splice(i, 1);
         continue;
       }
+
       this.ctx.save();
       this.ctx.globalAlpha = p.alpha;
-      this.ctx.fillStyle = '#ffd700';
+      this.ctx.fillStyle = p.color;
+      this.ctx.shadowBlur = 8;
+      this.ctx.shadowColor = p.color;
       this.ctx.beginPath();
       this.ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
       this.ctx.fill();
@@ -144,7 +168,7 @@ class CoralineSky {
     this.renderStars();
     this.renderFireflies();
     this.renderSparks();
-    this.animId = requestAnimationFrame(() => this.loop());
+    requestAnimationFrame(() => this.loop());
   }
 }
 
