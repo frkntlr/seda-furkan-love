@@ -74,109 +74,80 @@ cascade_path = cv2.data.haarcascades
 face_cascade = cv2.CascadeClassifier(cascade_path + 'haarcascade_frontalface_default.xml')
 eye_cascade = cv2.CascadeClassifier(cascade_path + 'haarcascade_eye.xml')
 
+def extract_face_eyes(gray, face, w, h):
+    fx, fy, fw, fh = face
+    roi_gray = gray[fy:fy+int(fh*0.65), fx:fx+fw]
+    eyes = eye_cascade.detectMultiScale(roi_gray, scaleFactor=1.1, minNeighbors=4, minSize=(15, 15))
+    if len(eyes) >= 2:
+        eyes = sorted(eyes, key=lambda e: e[0])[:2]
+        return [
+            {"x": round(((fx + ex + ew // 2) / w) * 100, 1),
+             "y": round(((fy + ey + eh // 2) / h) * 100, 1)}
+            for (ex, ey, ew, eh) in eyes
+        ]
+    return [
+        {"x": round(((fx + fw * 0.35) / w) * 100, 1),
+         "y": round(((fy + fh * 0.38) / h) * 100, 1)},
+        {"x": round(((fx + fw * 0.65) / w) * 100, 1),
+         "y": round(((fy + fh * 0.38) / h) * 100, 1)}
+    ]
+
 def detect_eyes_in_image(img_path):
     img = cv2.imread(img_path)
     if img is None:
         return [{"x": 42.0, "y": 38.0}, {"x": 58.0, "y": 38.0}]
-    
     h, w = img.shape[:2]
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     faces = face_cascade.detectMultiScale(gray, scaleFactor=1.15, minNeighbors=5, minSize=(60, 60))
-    
-    detected_eyes = []
-    
+    detected = []
     if len(faces) > 0:
-        # En büyük 2 yüze bak
         faces = sorted(faces, key=lambda f: f[2]*f[3], reverse=True)[:2]
-        for (fx, fy, fw, fh) in faces:
-            roi_gray = gray[fy:fy+int(fh*0.65), fx:fx+fw]
-            eyes = eye_cascade.detectMultiScale(roi_gray, scaleFactor=1.1, minNeighbors=4, minSize=(15, 15))
-            
-            if len(eyes) >= 2:
-                eyes = sorted(eyes, key=lambda e: e[0])[:2]
-                for (ex, ey, ew, eh) in eyes:
-                    cx = fx + ex + ew // 2
-                    cy = fy + ey + eh // 2
-                    detected_eyes.append({
-                        "x": round((cx / w) * 100, 1),
-                        "y": round((cy / h) * 100, 1)
-                    })
-            else:
-                # Yüz geometrisinden doğal göz koordinatları
-                detected_eyes.append({
-                    "x": round(((fx + fw * 0.35) / w) * 100, 1),
-                    "y": round(((fy + fh * 0.38) / h) * 100, 1)
-                })
-                detected_eyes.append({
-                    "x": round(((fx + fw * 0.65) / w) * 100, 1),
-                    "y": round(((fy + fh * 0.38) / h) * 100, 1)
-                })
-    
-    if not detected_eyes:
-        # Portre standardı estetik göz koordinatları
-        detected_eyes = [
-            {"x": 42.5, "y": 38.0},
-            {"x": 57.5, "y": 38.0}
-        ]
-        
-    return detected_eyes[:4]
+        for face in faces:
+            detected.extend(extract_face_eyes(gray, face, w, h))
+    if not detected:
+        detected = [{"x": 42.5, "y": 38.0}, {"x": 57.5, "y": 38.0}]
+    return detected[:4]
+
+def process_image_variants(orig_jpg, thumb_webp, opt_webp):
+    with Image.open(orig_jpg) as im:
+        im = im.convert("RGB")
+        opt_im = im.copy()
+        opt_im.thumbnail((1280, 1280), Image.Resampling.LANCZOS)
+        opt_im.save(opt_webp, "WEBP", quality=85)
+        thumb_im = im.copy()
+        thumb_im.thumbnail((420, 420), Image.Resampling.LANCZOS)
+        thumb_im.save(thumb_webp, "WEBP", quality=78)
+
+def enrich_memory_fields(mem, i, img_id):
+    mem["thumb"] = f"images/thumbs/{img_id}.webp"
+    mem["optimized"] = f"images/optimized/{img_id}.webp"
+    mem["image"] = f"images/optimized/{img_id}.webp"
+    loc_name = mem.get("location", "Kadıköy")
+    geo = LOCATIONS_GEO.get(loc_name, {"lat": 40.9850, "lng": 29.0300})
+    offset_lat = ((mem["id"] % 5) - 2) * 0.0012
+    offset_lng = (((mem["id"] * 3) % 5) - 2) * 0.0012
+    mem["lat"] = round(geo["lat"] + offset_lat, 5)
+    mem["lng"] = round(geo["lng"] + offset_lng, 5)
+    mem["secretMessage"] = SECRET_MESSAGES[i % len(SECRET_MESSAGES)]
+    mem["secretRune"] = ["🌀", "🗝️", "✨", "🖤", "🧵", "🪡", "👁️", "🌙"][i % 8]
 
 def process():
     with open(DATA_FILE, "r", encoding="utf-8") as f:
         memories = json.load(f)
-
     print(f"Toplam {len(memories)} anı işleniyor...")
-
     for i, mem in enumerate(memories):
         img_id = f"memory-{mem['id']:02d}"
         orig_jpg = os.path.join(IMAGES_DIR, f"{img_id}.jpg")
         thumb_webp = os.path.join(THUMBS_DIR, f"{img_id}.webp")
         opt_webp = os.path.join(OPTIMIZED_DIR, f"{img_id}.webp")
-
         if os.path.exists(orig_jpg):
-            # 1. WebP Optimizasyonu
-            with Image.open(orig_jpg) as im:
-                im = im.convert("RGB")
-                
-                # Optimized versiyon (max 1280px)
-                opt_im = im.copy()
-                opt_im.thumbnail((1280, 1280), Image.Resampling.LANCZOS)
-                opt_im.save(opt_webp, "WEBP", quality=85)
-                
-                # Thumbnail versiyon (max 420px)
-                thumb_im = im.copy()
-                thumb_im.thumbnail((420, 420), Image.Resampling.LANCZOS)
-                thumb_im.save(thumb_webp, "WEBP", quality=78)
-
-            # 2. Göz Tespiti
-            eyes = detect_eyes_in_image(orig_jpg)
-            mem["eyes"] = eyes
+            process_image_variants(orig_jpg, thumb_webp, opt_webp)
+            mem["eyes"] = detect_eyes_in_image(orig_jpg)
         else:
             mem["eyes"] = [{"x": 42.0, "y": 38.0}, {"x": 58.0, "y": 38.0}]
-
-        # 3. Yollar
-        mem["thumb"] = f"images/thumbs/{img_id}.webp"
-        mem["optimized"] = f"images/optimized/{img_id}.webp"
-        # Geriye dönük uyumluluk
-        mem["image"] = f"images/optimized/{img_id}.webp"
-
-        # 4. Lokasyon Koordinatları
-        loc_name = mem.get("location", "Kadıköy")
-        geo = LOCATIONS_GEO.get(loc_name, {"lat": 40.9850, "lng": 29.0300})
-        # Hafif doğal varyasyon (aynı konumdaki noktaların çakışmaması için)
-        offset_lat = ((mem["id"] % 5) - 2) * 0.0012
-        offset_lng = (((mem["id"] * 3) % 5) - 2) * 0.0012
-        mem["lat"] = round(geo["lat"] + offset_lat, 5)
-        mem["lng"] = round(geo["lng"] + offset_lng, 5)
-
-        # 5. Gören Taş Gizli Mesajı & Sembolü
-        msg = SECRET_MESSAGES[i % len(SECRET_MESSAGES)]
-        mem["secretMessage"] = msg
-        mem["secretRune"] = ["🌀", "🗝️", "✨", "🖤", "🧵", "🪡", "👁️", "🌙"][i % 8]
-
+        enrich_memory_fields(mem, i, img_id)
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(memories, f, ensure_ascii=False, indent=2)
-
     print("[OK] Tum gorseller WebP'ye donusturuldu, goz koordinatlari ve harita konumlari islendi!")
 
 if __name__ == "__main__":

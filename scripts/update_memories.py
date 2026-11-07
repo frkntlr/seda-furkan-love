@@ -1,118 +1,131 @@
 # -*- coding: utf-8 -*-
 """
 Memories Veri Güncelleyici
-OpenCV göz koordinatları, GPS harita verisi ve WebP görsel yollarını işler.
 Demir Kafes Kuralı: <300 satır, fonksiyonlar <40 satır
 """
 
-import os
 import json
-from detect_eyes import calculate_eye_positions
+import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 JSON_PATH = os.path.join(BASE_DIR, "public", "data", "memories.json")
-IMG_DIR = os.path.join(BASE_DIR, "public", "images")
 
+# Merkezi romantik hat: Kadıköy / Moda / Boğaz Vapuru / Ortaköy / Kuzguncuk
 ROMANTIC_LOCATIONS = {
-    1: {"name": "Kadıköy Rıhtım & Çarşı", "lat": 40.9904, "lng": 29.0253},
-    2: {"name": "Moda Sahili", "lat": 40.9822, "lng": 29.0275},
-    3: {"name": "Fenerbahçe Parkı", "lat": 40.9697, "lng": 29.0371},
-    4: {"name": "Kalamış Marina", "lat": 40.9765, "lng": 29.0402},
-    5: {"name": "Moda Çay Bahçesi & Burnu", "lat": 40.9806, "lng": 29.0248},
-    6: {"name": "Bostancı İskelesi & Sahil", "lat": 40.9525, "lng": 29.0945},
-    7: {"name": "Bağdat Caddesi", "lat": 40.9634, "lng": 29.0689},
-    8: {"name": "Emirgan Korusu Lale Bahçeleri", "lat": 41.1086, "lng": 29.0558},
-    9: {"name": "Emirgan Sahili", "lat": 41.1042, "lng": 29.0572},
-    10: {"name": "Bebek Parkı & Koyu", "lat": 41.0772, "lng": 29.0436},
-    11: {"name": "Arnavutköy Boğaz Kıyısı", "lat": 41.0673, "lng": 29.0439},
-    12: {"name": "Karaköy Rıhtımı", "lat": 41.0232, "lng": 28.9778},
-    13: {"name": "Beşiktaş Abbasağa Parkı", "lat": 41.0478, "lng": 29.0042},
-    14: {"name": "Ortaköy Meydanı & Boğaz", "lat": 41.0472, "lng": 29.0270},
-    15: {"name": "Galata Kulesi Meydanı", "lat": 41.0256, "lng": 28.9741},
-    16: {"name": "Caddebostan Dalyan Parkı", "lat": 40.9658, "lng": 29.0573},
-    17: {"name": "Caddebostan Sahil Şeridi", "lat": 40.9622, "lng": 29.0638},
-    18: {"name": "Heybeliada Çamlimanı", "lat": 40.8719, "lng": 29.0934},
-    19: {"name": "Büyükada Dilburnu", "lat": 40.8625, "lng": 29.1172},
-    20: {"name": "Marmara Denizi Vapur Yolu", "lat": 40.9250, "lng": 29.0550},
-    21: {"name": "Kınalıada Açıkları Vapur", "lat": 40.9067, "lng": 29.0528},
-    22: {"name": "Kuzguncuk İcadiye Caddesi", "lat": 41.0347, "lng": 29.0298},
-    23: {"name": "Tarihi Kuzguncuk Bostanı", "lat": 41.0335, "lng": 29.0315},
-    24: {"name": "Üsküdar Salacak & Kız Kulesi", "lat": 41.0211, "lng": 29.0061},
-    25: {"name": "Cihangir Merdivenleri", "lat": 41.0314, "lng": 28.9863},
-    26: {"name": "Tarihi Galata Köprüsü", "lat": 41.0202, "lng": 28.9733},
-    27: {"name": "Karaköy Fransız Geçidi", "lat": 41.0245, "lng": 28.9790},
-    28: {"name": "Galata Bereketzade Sokağı", "lat": 41.0263, "lng": 28.9732},
-    29: {"name": "Galata Kulesi Seyir Terası", "lat": 41.0258, "lng": 28.9744},
-    30: {"name": "Beyoğlu Çiçek Pasajı", "lat": 41.0342, "lng": 28.9765},
-    31: {"name": "Taksim Gezi Parkı", "lat": 41.0384, "lng": 28.9875},
-    32: {"name": "İstiklal Caddesi Nostalji", "lat": 41.0337, "lng": 28.9779},
-    33: {"name": "Beyoğlu Asmalımescit", "lat": 41.0298, "lng": 28.9748},
-    34: {"name": "Haliç Balat Sahili", "lat": 41.0318, "lng": 28.9489},
-    35: {"name": "Kandilli İskelesi & Sahili", "lat": 41.0744, "lng": 29.0583},
-    36: {"name": "Ortaköy Boğaziçi Köprüsü Manzarası", "lat": 41.0489, "lng": 29.0345},
-    37: {"name": "Yıldız Parkı Çadır Köşkü", "lat": 41.0494, "lng": 29.0152},
-    38: {"name": "Büyük Çamlıca Tepesi", "lat": 41.0269, "lng": 29.0681},
-    39: {"name": "Gülhane Parkı Tarihi Bahçe", "lat": 41.0131, "lng": 28.9814}
+    0: ("Kadıköy", "Birlikte İlk Adımlar", 40.9904, 29.0253),
+    1: ("Kadıköy", "Bizim Gizli Köşemiz", 40.9882, 29.0245),
+    2: ("Moda Sahili", "Sahil Yürüyüşü & Günbatımı", 40.9822, 29.0275),
+    3: ("Moda Sahili", "Sıcak Bir Kahve & Gülüşün", 40.9835, 29.0268),
+    4: ("Kadıköy", "El Ele Büyülü Adımlar", 40.9868, 29.0282),
+    5: ("Moda Sahili", "Deniz Kıyısında Bir Masal", 40.9806, 29.0248),
+    6: ("Moda Sahili", "Kızıl Gökyüzü & Huzur", 40.9792, 29.0235),
+    7: ("Kadıköy", "Yıldızların Altında", 40.9875, 29.0298),
+    8: ("Ortaköy Sahili", "İlk Çiçekler & Tebessümün", 41.0472, 29.0270),
+    9: ("Ortaköy Sahili", "Boğaz Kıyısında Masum Bir Bakış", 41.0485, 29.0282),
+    10: ("Moda Parkı", "Ağaçlar Altında Kahkahalarımız", 40.9842, 29.0290),
+    11: ("Boğaz Kıyısı", "Mavi Dalgalar ve Sessizliğimiz", 41.0458, 29.0262),
+    12: ("Boğaz Hattı", "Gece Işıklarının Dansı", 41.0435, 29.0248),
+    13: ("Ortaköy", "Tatlı Bir Mola & Sıcak Sohbet", 41.0465, 29.0276),
+    14: ("Ortaköy Sahili", "Göz Göze Sessiz Bir An", 41.0478, 29.0285),
+    15: ("Boğaz Kıyısı", "Bizim Masamız & Mum Işığı", 41.0492, 29.0298),
+    16: ("Moda Sahili", "Baharla Gelen Melodimiz", 40.9815, 29.0262),
+    17: ("Moda Sahili", "Rüzgarda Uçuşan Saçların", 40.9802, 29.0251),
+    18: ("Boğaz Vapuru", "Güneşin Sıcaklığı & Gülüşün", 41.0185, 29.0142),
+    19: ("Boğaz Vapuru", "Deniz Kokusu & Mutluluğumuz", 41.0152, 29.0168),
+    20: ("Boğaz Vapuru", "Vapurda İki Çay, Bir Masal", 41.0125, 29.0185),
+    21: ("Boğaz Vapuru", "Vapurda Martılar ve Aşkımız", 41.0105, 29.0210),
+    22: ("Kuzguncuk", "Kuzguncuk Sokaklarında Sevdamız", 41.0347, 29.0298),
+    23: ("Kuzguncuk", "Tarihi Çınar Altı & Huzur", 41.0335, 29.0312),
+    24: ("Üsküdar Sahili", "Kız Kulesi Karşısında Fısıltılar", 41.0211, 29.0061),
+    25: ("Ortaköy", "En Uzun Günün En Güzel Hatırası", 41.0482, 29.0268),
+    26: ("Ortaköy Sahili", "Boğaz Köprüsü Altında Parıltın", 41.0495, 29.0278),
+    27: ("Kadıköy", "Adım Adım Mutluluğa Doğru", 40.9892, 29.0265),
+    28: ("Kadıköy", "Işıltılı Bakışların Aynası", 40.9880, 29.0272),
+    29: ("Moda Sahili", "İçimizi Isıtan O Gülüşün", 40.9828, 29.0260),
+    30: ("Moda Sahili", "Kalplerimizin Düğümlendiği Yer", 40.9818, 29.0255),
+    31: ("Moda Parkı", "Bizim Şarkımızın Çaldığı Köşe", 40.9848, 29.0285),
+    32: ("Kadıköy", "Birlikte Kaybolduğumuz Sokaklar", 40.9870, 29.0278),
+    33: ("Kadıköy", "Aşkla Çarpan Kalplerimiz", 40.9862, 29.0268),
+    34: ("Moda Sahili", "Altın Sarısı Akşamüstü", 40.9798, 29.0242),
+    35: ("Boğaz Kıyısı", "Dünyanın En Huzurlu Limanı", 41.0505, 29.0305),
+    36: ("Ortaköy Sahili", "Büyülü Bir Boğaz Akşamı", 41.0489, 29.0320),
+    37: ("Ortaköy Sahili", "Sonsuzluğa Bakan Köşemiz", 41.0475, 29.0275),
+    38: ("Moda Sahili", "Yıldızlara Fısıldanan Sözler", 40.9810, 29.0249),
+    39: ("Kadıköy Rıhtım", "Sonsuz Masalımızın Mührü", 40.9912, 29.0248),
 }
 
 
-def load_memories():
-    """Mevcut memories.json dosyasını okur."""
-    with open(JSON_PATH, "r", encoding="utf-8") as f:
-        return json.load(f)
+def build_first_photo_item():
+    """25 Ocak 2025 tarihli Seda ve Furkan'ın ilk fotoğraf kaydı."""
+    return {
+        "id": "memory-00",
+        "filename": "images/memory-00.webp",
+        "image": "images/optimized/memory-00.webp",
+        "originalFilename": "first_photo.jpg",
+        "date": "25 Ocak 2025",
+        "rawDate": "2025:01:25 14:57:18",
+        "location": "Kadıköy",
+        "title": "İlk Bakış: Her Şeyin Başladığı An",
+        "caption": (
+            "Sevgili olduğumuz o 20 Ocak gününden sadece birkaç gün sonra... "
+            "Gözlerinde kaybolduğum, kalbimin seninle atmaya başladığı ilk karemiz. "
+            "Dünyanın en güzel başlangıcı..."
+        ),
+        "note": (
+            "Sevgili olduğumuz o 20 Ocak gününden sadece birkaç gün sonra... "
+            "Gözlerinde kaybolduğum, kalbimin seninle atmaya başladığı ilk karemiz. "
+            "Dünyanın en güzel başlangıcı..."
+        ),
+        "coraline_chapter": "Kapının Anahtarı",
+        "category": "first_sparks",
+        "device": "Samsung SM-A145F",
+        "gps": None,
+        "width": 2854,
+        "height": 3730,
+        "eyes": [{"x": 48.8, "y": 51.33}, {"x": 61.22, "y": 52.17}],
+        "thumb": "images/thumbs/memory-00.webp",
+        "optimized": "images/optimized/memory-00.webp",
+        "lat": 40.9904,
+        "lng": 29.0253,
+        "secretMessage": "20 Ocak'ta başlayan masalımızın ölümsüzleştiği ilk an Seda'm...",
+        "secretRune": "🗝️",
+        "fallback_jpg": "images/memory-00.jpg",
+        "location_name": "Birlikte İlk Adımlar",
+        "original": "images/memory-00.jpg",
+    }
 
 
-def enrich_memory_item(item):
-    """Tek bir anıyı göz koordinatları, harita ve optimize WebP ile zenginleştirir."""
-    mid = item["id"]
-    mem_name = f"memory-{mid:02d}.jpg"
-    webp_name = f"memory-{mid:02d}.webp"
-    full_img_path = os.path.join(IMG_DIR, mem_name)
-
-    # 1. Göz koordinatları tespiti
-    eyes = calculate_eye_positions(full_img_path)
-    item["eyes"] = eyes
-
-    # 2. Harita koordinatları ve lokasyon adı
-    loc_info = ROMANTIC_LOCATIONS.get(mid, {
-        "name": item.get("location", "İstanbul"),
-        "lat": 41.0082,
-        "lng": 28.9784
-    })
-    item["lat"] = loc_info["lat"]
-    item["lng"] = loc_info["lng"]
-    item["location_name"] = loc_info["name"]
-
-    # 3. Optimize WebP ve Thumb yolları
-    item["thumb"] = f"images/thumbs/{webp_name}"
-    item["optimized"] = f"images/optimized/{webp_name}"
-    item["image"] = f"images/optimized/{webp_name}"
-    item["original"] = f"images/{mem_name}"
+def update_memory_location(item, index_or_id):
+    """Tekil anının konumunu ve koordinatlarını günceller."""
+    if index_or_id in ROMANTIC_LOCATIONS:
+        loc, loc_name, lat, lng = ROMANTIC_LOCATIONS[index_or_id]
+        item["location"] = loc
+        item["location_name"] = loc_name
+        item["lat"] = lat
+        item["lng"] = lng
     return item
 
 
-def save_memories(memories):
-    """Güncellenmiş anıları UTF-8 JSON olarak kaydeder."""
+def run_update():
+    """Tüm anıları okur, ilk fotoğrafı başa ekler ve konumları günceller."""
+    with open(JSON_PATH, "r", encoding="utf-8") as f:
+        existing = json.load(f)
+
+    # memory-00 zaten eklenmiş mi kontrol et
+    clean_items = [m for m in existing if m.get("id") not in ("memory-00", 0)]
+    first_item = build_first_photo_item()
+    all_memories = [first_item] + clean_items
+
+    for item in all_memories:
+        mid = item.get("id")
+        key = 0 if mid in ("memory-00", 0) else int(mid)
+        update_memory_location(item, key)
+
     with open(JSON_PATH, "w", encoding="utf-8", newline="\n") as f:
-        json.dump(memories, f, ensure_ascii=False, indent=2)
-    print(f"Başarıyla güncellendi: {JSON_PATH}")
+        json.dump(all_memories, f, ensure_ascii=False, indent=2)
 
-
-def run_pipeline():
-    """Tüm anıları tarar ve JSON veritabanını günceller."""
-    memories = load_memories()
-    print(f"Toplam {len(memories)} anı zenginleştiriliyor...")
-
-    for idx, item in enumerate(memories, 1):
-        enrich_memory_item(item)
-        eyes_str = f"L:({item['eyes'][0]['x']}, {item['eyes'][0]['y']}) R:({item['eyes'][1]['x']}, {item['eyes'][1]['y']})"
-        print(
-            f"[{idx:02d}] {item['title']} -> {item['location_name']} "
-            f"[{item['lat']}, {item['lng']}] | Gözler: {eyes_str}"
-        )
-
-    save_memories(memories)
+    print(f"Toplam {len(all_memories)} anı başarıyla güncellendi: {JSON_PATH}")
 
 
 if __name__ == "__main__":
-    run_pipeline()
+    run_update()

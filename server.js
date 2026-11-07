@@ -18,7 +18,7 @@ const MANIFESTO_PATH = path.join(__dirname, 'docs', 'SEDA_VE_FURKAN_ASK_MANIFEST
 // Middlewares
 app.use(cors());
 app.use(express.json());
-app.use(express.static(PUBLIC_DIR));
+app.use(express.static(PUBLIC_DIR, { dotfiles: 'allow' }));
 
 // API: Sağlık Kontrolü
 app.get('/api/health', (req, res) => {
@@ -89,7 +89,8 @@ app.use((req, res, next) => {
   if (req.method !== 'GET') return next();
   const indexPath = path.join(PUBLIC_DIR, 'index.html');
   if (fs.existsSync(indexPath)) {
-    return res.sendFile(indexPath);
+    res.type('html');
+    return fs.createReadStream(indexPath).pipe(res);
   }
   return res.status(200).send(`
     <!DOCTYPE html>
@@ -106,14 +107,20 @@ app.use((req, res, next) => {
 
 // Global Hata Yakalayıcı
 app.use((err, req, res, next) => {
-  console.error('[Sunucu Hatası]:', err);
-  res.status(500).json({ error: 'İç Sunucu Hatası', message: err.message });
+  console.error('[Sunucu Hatası]:', err.message || err);
+  if (!res.headersSent) {
+    res.status(500).json({ error: 'İç Sunucu Hatası', message: err.message });
+  }
 });
 
 // Sunucuyu Başlat
 const server = app.listen(PORT, () => {
   console.log(`🗝️ [Aegis Server] Coraline Aşk Sitesi http://localhost:${PORT} adresinde yayında!`);
 });
+
+// Hata Muhafızları
+process.on('uncaughtException', (err) => console.error('[UncaughtException]:', err));
+process.on('unhandledRejection', (reason) => console.error('[UnhandledRejection]:', reason));
 
 // Graceful Shutdown
 function handleShutdown(signal) {

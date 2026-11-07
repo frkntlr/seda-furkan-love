@@ -1,44 +1,54 @@
 {
-  "planId": "tw-mw6843s8",
-  "objective": "Dugme Gozler Hizalama, Coraline Animasyonlari, Ask Haritasi ve Ucretsiz CDN Yayini",
+  "planId": "tw-mw69ed7i",
+  "objective": "Ilk Fotograf Entegrasyonu, 20 Ocak Yildonumu, Seda Furkan Kalbi Giris, OpenStreetMap ve Konum Duzeltmeleri",
   "activeWave": 1,
   "agents": {
-    "issue-solver [Dugme]": {
-      "agentId": "issue-solver [Dugme]",
+    "issue-solver [Ilk]": {
+      "agentId": "issue-solver [Ilk]",
       "role": "solver",
-      "subagentName": "issue-solver [Dugme]",
+      "subagentName": "issue-solver [Ilk]",
       "status": "pending",
       "currentActivity": "Wave 1",
       "lockedFiles": [],
       "modifiedFiles": [],
       "publishedContracts": [],
-      "updatedAt": "2026-11-07T09:51:10.385Z",
+      "updatedAt": "2026-11-07T10:27:08.776Z",
       "phase": 1
     },
-    "issue-solver [Coraline]": {
-      "agentId": "issue-solver [Coraline]",
+    "issue-solver [20]": {
+      "agentId": "issue-solver [20]",
       "role": "solver",
-      "subagentName": "issue-solver [Coraline]",
+      "subagentName": "issue-solver [20]",
       "status": "pending",
       "currentActivity": "Wave 1",
       "lockedFiles": [],
       "modifiedFiles": [],
       "publishedContracts": [],
-      "updatedAt": "2026-11-07T09:51:10.385Z",
+      "updatedAt": "2026-11-07T10:27:08.776Z",
       "phase": 1
     },
-    "issue-solver [Ask]": {
-      "agentId": "issue-solver [Ask]",
+    "issue-solver [Seda]": {
+      "agentId": "issue-solver [Seda]",
       "role": "solver",
-      "subagentName": "issue-solver [Ask]",
+      "subagentName": "issue-solver [Seda]",
       "status": "pending",
       "currentActivity": "Wave 1",
-      "lockedFiles": [
-        ".aegis/task-inbox.json"
-      ],
+      "lockedFiles": [],
       "modifiedFiles": [],
       "publishedContracts": [],
-      "updatedAt": "2026-11-07T09:51:10.385Z",
+      "updatedAt": "2026-11-07T10:27:08.776Z",
+      "phase": 1
+    },
+    "issue-solver [OpenStreetMap]": {
+      "agentId": "issue-solver [OpenStreetMap]",
+      "role": "solver",
+      "subagentName": "issue-solver [OpenStreetMap]",
+      "status": "pending",
+      "currentActivity": "Wave 1",
+      "lockedFiles": [],
+      "modifiedFiles": [],
+      "publishedContracts": [],
+      "updatedAt": "2026-11-07T10:27:08.776Z",
       "phase": 1
     },
     "doc-architect [Docs]": {
@@ -52,7 +62,7 @@
       ],
       "modifiedFiles": [],
       "publishedContracts": [],
-      "updatedAt": "2026-11-07T09:51:10.385Z",
+      "updatedAt": "2026-11-07T10:27:08.776Z",
       "phase": 3
     },
     "qa-hunter [Audit]": {
@@ -64,18 +74,18 @@
       "lockedFiles": [],
       "modifiedFiles": [],
       "publishedContracts": [],
-      "updatedAt": "2026-11-07T09:51:10.385Z",
+      "updatedAt": "2026-11-07T10:27:08.776Z",
       "phase": 2
     }
   },
   "events": [
     {
-      "id": "evt-init-mw6843sh",
-      "timestamp": "2026-11-07T09:51:10.385Z",
+      "id": "evt-init-mw69ed7s",
+      "timestamp": "2026-11-07T10:27:08.776Z",
       "fromAgent": "coordinator",
       "type": "milestone",
-      "message": "Mesh initialized for tw-mw6843s8: \"Dugme Gozler Hizalama, Coraline Animasyonlari, Ask Haritasi \""
+      "message": "Mesh initialized for tw-mw69ed7i: \"Ilk Fotograf Entegrasyonu, 20 Ocak Yildonumu, Seda Furkan Ka\""
     }
   ],
-  "lastUpdated": "2026-11-07T09:51:10.385Z"
+  "lastUpdated": "2026-11-07T10:27:08.776Z"
 }

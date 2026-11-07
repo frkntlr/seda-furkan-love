@@ -94,6 +94,34 @@
   transform: rotateY(-92deg);
 }
 
+/* Seda & Furkan Kalp Kapı Amblemi */
+.door-heart-crest {
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 0 16px rgba(255, 51, 136, 0.8));
+  z-index: 5;
+  transition: transform 0.4s ease;
+}
+
+.heart-pulse-svg {
+  display: block;
+  animation: heartThrob 2.2s infinite ease-in-out;
+}
+
+@keyframes heartThrob {
+  0%, 100% { transform: scale(1); filter: brightness(1); }
+  14% { transform: scale(1.08); filter: brightness(1.25); }
+  28% { transform: scale(1); filter: brightness(1); }
+  42% { transform: scale(1.05); filter: brightness(1.15); }
+  70% { transform: scale(1); filter: brightness(1); }
+}
+
+.vintage-door:hover .door-heart-crest {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
 .keyhole {
   width: 22px;
   height: 38px;

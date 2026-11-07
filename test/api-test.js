@@ -11,17 +11,17 @@ const memoryService = require('../src/memory-service');
 function testMemoryService() {
   console.log('🧪 [Test 1] MemoryService veri yükleme testi...');
   const memories = memoryService.getMemories();
-  assert.strictEqual(memories.length, 39, `Beklenen 39 anı, bulunan: ${memories.length}`);
+  assert.strictEqual(memories.length, 40, `Beklenen 40 anı, bulunan: ${memories.length}`);
 
   const first = memories[0];
   assert.strictEqual(first.id, 1, 'İlk anı id 1 olmalı');
   assert.ok(first.filename, 'filename alanı bulunmalı');
   assert.ok(first.title, 'title alanı bulunmalı');
-  assert.ok(first.date, 'date alanı bulunmalı');
+  assert.strictEqual(first.date, '25 Ocak 2025', 'İlk anı 25 Ocak 2025 tarihli olmalı');
   assert.ok(first.location, 'location alanı bulunmalı');
   assert.ok(first.caption, 'caption alanı bulunmalı');
   assert.ok(first.coraline_chapter, 'coraline_chapter alanı bulunmalı');
-  console.log('  ✅ MemoryService tüm alanları eksiksiz yükledi.');
+  console.log('  ✅ MemoryService tüm 40 anıyı ve 25 Ocak ilk anıyı eksiksiz yükledi.');
 }
 
 function testAssetExistence() {
@@ -42,19 +42,20 @@ function testChapterGrouping() {
   assert.strictEqual(chapters.length, 4, `4 bölüm bekleniyordu, bulunan: ${chapters.length}`);
 
   const totalInChapters = chapters.reduce((acc, c) => acc + c.count, 0);
-  assert.strictEqual(totalInChapters, 39, `Bölümlerdeki toplam görsel sayısı 39 olmalı`);
-  console.log('  ✅ 4 Coraline bölümü ve 39 görsel başarıyla gruplandı:');
+  assert.strictEqual(totalInChapters, 40, `Bölümlerdeki toplam görsel sayısı 40 olmalı`);
+  console.log('  ✅ 4 Coraline bölümü ve 40 görsel başarıyla gruplandı:');
   chapters.forEach((c) => console.log(`     - ${c.name}: ${c.count} hatıra`));
 }
 
 function testStats() {
-  console.log('🧪 [Test 4] İstatistik hesaplama testi...');
+  console.log('🧪 [Test 4] İstatistik & 20 Ocak Yıldönümü testi...');
   const stats = memoryService.getStats();
-  assert.strictEqual(stats.totalMemories, 39);
+  assert.strictEqual(stats.totalMemories, 40);
   assert.strictEqual(stats.totalChapters, 4);
-  assert.ok(stats.firstMemoryDate);
+  assert.strictEqual(stats.anniversaryDate, '20 Ocak 2025', 'Yıldönümü 20 Ocak 2025 olmalı');
+  assert.strictEqual(stats.firstMemoryDate, '25 Ocak 2025', 'İlk anı tarihi 25 Ocak 2025 olmalı');
   assert.ok(stats.latestMemoryDate);
-  console.log(`  ✅ İstatistikler: ${stats.firstMemoryDate} -> ${stats.latestMemoryDate}`);
+  console.log(`  ✅ İstatistikler: Yıldönümü ${stats.anniversaryDate} | İlk Anı: ${stats.firstMemoryDate} -> ${stats.latestMemoryDate}`);
 }
 
 function testWebPAndCoordinates() {
@@ -88,7 +89,7 @@ function testWebPAndCoordinates() {
     assert.ok(m.lat >= 40.0 && m.lat <= 42.0, `İstanbul enlem aralığında olmalı: ${m.lat}`);
     assert.ok(m.lng >= 28.0 && m.lng <= 30.0, `İstanbul boylam aralığında olmalı: ${m.lng}`);
   });
-  console.log(`  ✅ Tüm 39 anının WebP görselleri, Göz koordinatları ve GPS harita verisi eksiksiz!`);
+  console.log(`  ✅ Tüm ${memories.length} anının WebP görselleri, Göz koordinatları ve GPS harita verisi eksiksiz!`);
 }
 
 function runAllTests() {

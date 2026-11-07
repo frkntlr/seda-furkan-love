@@ -69,6 +69,7 @@ class MemoryService {
       totalChapters: chapters.length,
       firstMemoryDate: startDate,
       latestMemoryDate: endDate,
+      anniversaryDate: '20 Ocak 2025',
       device: memories.length > 0 ? memories[0].device : 'Nothing Phone (1)',
       serverTime: new Date().toISOString()
     };

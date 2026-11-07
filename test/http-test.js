@@ -33,8 +33,8 @@ async function testHttpEndpoints() {
 
   const memories = await makeRequest('/api/memories');
   assert.strictEqual(memories.status, 200);
-  assert.strictEqual(memories.data.length, 39);
-  console.log('  ✅ /api/memories OK (Count: 39)');
+  assert.strictEqual(memories.data.length, 40);
+  console.log('  ✅ /api/memories OK (Count: 40)');
 
   const chapters = await makeRequest('/api/chapters');
   assert.strictEqual(chapters.status, 200);
@@ -43,13 +43,15 @@ async function testHttpEndpoints() {
 
   const stats = await makeRequest('/api/stats');
   assert.strictEqual(stats.status, 200);
-  assert.strictEqual(stats.data.totalMemories, 39);
-  console.log('  ✅ /api/stats OK (Memories: 39)');
+  assert.strictEqual(stats.data.totalMemories, 40);
+  assert.strictEqual(stats.data.anniversaryDate, '20 Ocak 2025');
+  console.log('  ✅ /api/stats OK (Memories: 40, Anniversary: 20 Ocak 2025)');
 
   const memoryOne = await makeRequest('/api/memories/1');
   assert.strictEqual(memoryOne.status, 200);
   assert.strictEqual(memoryOne.data.id, 1);
-  console.log('  ✅ /api/memories/1 OK');
+  assert.strictEqual(memoryOne.data.date, '25 Ocak 2025');
+  console.log('  ✅ /api/memories/1 OK (First Photo: 25 Ocak 2025)');
 }
 
 async function main() {
