@@ -46,6 +46,10 @@ class CoralineGallery {
   filterCategory(category) {
     if (category === 'all') {
       this.filteredMemories = [...this.memories];
+    } else if (category === 'first-dates' || category === 'first_sparks') {
+      this.filteredMemories = this.memories.filter(
+        m => m.category === 'first-dates' || m.category === 'first_sparks'
+      );
     } else {
       this.filteredMemories = this.memories.filter(m => m.category === category);
     }
