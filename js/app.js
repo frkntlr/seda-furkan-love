@@ -2,9 +2,11 @@
  * Seda & Furkan Coraline Evreni - Ana Uygulama & Sayaç Motoru
  */
 
+const START_DATE = new Date('2025-01-20T00:00:00');
+
 class CoralineApp {
   constructor() {
-    this.startDate = new Date('2025-03-25T20:30:00');
+    this.startDate = START_DATE;
     this.quoteElement = document.getElementById('coraline-quote');
     this.buttonEyeMode = false;
     this.quotes = [

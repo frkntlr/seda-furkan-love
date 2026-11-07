@@ -3,7 +3,7 @@
    Demir Kafes Uyumlu - Max 300 Satır
    ============================================================ */
 
-/* Pink Palace Gizli Kapı Overlay */
+/* Seda & Furkan Kalbe Açılan Kapı Overlay */
 #portal-overlay {
   position: fixed;
   inset: 0;
@@ -39,6 +39,18 @@
   text-shadow: 0 0 15px var(--portal-pink);
 }
 
+.portal-subtitle {
+  font-family: var(--coraline-font-body);
+  font-size: clamp(1.05rem, 2.2vw, 1.3rem);
+  font-style: italic;
+  color: #ffd7e8;
+  max-width: 650px;
+  margin: 12px auto 14px;
+  line-height: 1.5;
+  text-shadow: 0 0 12px rgba(255, 51, 136, 0.45);
+  padding: 0 16px;
+}
+
 .portal-hint {
   font-size: 1.15rem;
   color: var(--portal-cyan);
@@ -52,7 +64,7 @@
   50% { opacity: 1; transform: scale(1.05); }
 }
 
-/* Vintage Pembe Saray Kapısı & 3D Çerçeve */
+/* Vintage Gizli Kapı & 3D Çerçeve */
 .door-frame {
   position: relative;
   width: 240px;
