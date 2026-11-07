@@ -10,10 +10,18 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Creepster&display=swap" rel="stylesheet" />
 
+  <!-- Leaflet Harita Kütüphanesi -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
   <!-- Modüler Coraline Stilleri -->
   <link rel="stylesheet" href="css/coraline.css" />
+  <link rel="stylesheet" href="css/button-eyes.css" />
   <link rel="stylesheet" href="css/portal.css" />
+  <link rel="stylesheet" href="css/button-eyes.css" />
   <link rel="stylesheet" href="css/modal.css" />
+  <link rel="stylesheet" href="css/button-eyes.css" />
+  <link rel="stylesheet" href="css/map.css" />
+  <link rel="stylesheet" href="css/seeing-stone.css" />
 </head>
 <body>
 
@@ -54,7 +62,7 @@
       </div>
     </div>
 
-    <!-- Vintage Ahşap Kapı & Vortex Tüneli -->
+    <!-- Vintage Ahşap Kapı & 3D Vortex Tüneli -->
     <div class="door-frame">
       <div id="vortex-tunnel" class="vortex-tunnel"></div>
       <div id="vintage-door" class="vintage-door" role="button" aria-label="Küçük Gizli Kapı">
@@ -74,6 +82,10 @@
 
       <button id="button-eyes-toggle" class="coraline-btn" aria-label="Düğme Göz Modu">
         <span class="btn-label">👁️ Düğme Göz Modu</span>
+      </button>
+
+      <button id="seeing-stone-toggle" class="coraline-btn" aria-label="Gören Taş Modu">
+        <span class="btn-label">🟢 Gören Taş</span>
       </button>
 
       <button id="return-door-btn" class="coraline-btn" aria-label="Gizli Kapıya Dön">
@@ -126,12 +138,27 @@
         <button class="filter-chip" data-category="magical-nights">🌙 Büyülü Geceler</button>
       </nav>
 
-      <!-- İğne ve İplik SVG Katmanı -->
-      <svg id="thread-svg" aria-hidden="true"></svg>
-
       <!-- Polaroid Kart Gridi -->
       <div id="gallery-grid" class="polaroid-grid">
-        <!-- JavaScript ile dinamik render edilecek -->
+        <!-- JavaScript ile dinamik render edilir -->
+      </div>
+    </section>
+
+    <!-- AŞKIMIZIN COĞRAFYASI (CORALINE GECE HARİTASI) -->
+    <section id="map-section" class="love-map-section">
+      <div class="map-header">
+        <h2 class="map-title">Aşkımızın Coğrafyası</h2>
+        <p class="map-subtitle">Coraline Gece Haritası • İstanbul'da Kalbimizin Attığı Köşeler</p>
+        <div class="map-quick-bar">
+          <button class="map-chip" data-lat="40.985" data-lng="29.028" data-zoom="14">📍 Kadıköy &amp; Moda</button>
+          <button class="map-chip" data-lat="41.025" data-lng="28.974" data-zoom="15">🗝️ Galata Kulesi</button>
+          <button class="map-chip" data-lat="41.077" data-lng="29.044" data-zoom="14">🌿 Bebek &amp; Emirgan</button>
+          <button class="map-chip" data-lat="41.036" data-lng="29.030" data-zoom="15">🌸 Kuzguncuk</button>
+          <button class="map-chip" data-lat="40.868" data-lng="29.110" data-zoom="13">🌊 Adalar Vapuru</button>
+        </div>
+      </div>
+      <div class="map-frame">
+        <div id="coraline-map"></div>
       </div>
     </section>
   </main>
@@ -165,11 +192,16 @@
     </div>
   </dialog>
 
+  <!-- Leaflet Harita Kütüphanesi JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
   <!-- Modüler Scriptler -->
   <script src="js/audio.js"></script>
   <script src="js/stars.js"></script>
   <script src="js/portal.js"></script>
   <script src="js/gallery.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/seeing-stone.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

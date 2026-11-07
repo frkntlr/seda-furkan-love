@@ -1,6 +1,7 @@
 /**
- * Coraline Gizli Kapı & Vortex Tüneli Kontrolcüsü
+ * Coraline Gizli Kapı, 360 Anahtar & Vortex Tüneli Kontrolcüsü
  * Pink Palace vintage kapısı, düğme anahtar ve Other World geçişi
+ * Demir Kafes: <300 satır, fonksiyonlar <40 satır
  */
 
 class CoralinePortal {
@@ -19,17 +20,14 @@ class CoralinePortal {
   bindEvents() {
     if (!this.keyElement || !this.doorElement) return;
 
-    // Anahtar tıklaması veya dokunması
     this.keyElement.addEventListener('click', () => this.unlockDoor());
     this.keyElement.addEventListener('touchend', (e) => {
       e.preventDefault();
       this.unlockDoor();
     });
 
-    // Kapıya doğrudan tıklama desteği
     this.doorElement.addEventListener('click', () => this.unlockDoor());
 
-    // Yeniden kapıya dönme butonu
     const returnBtn = document.getElementById('return-door-btn');
     if (returnBtn) {
       returnBtn.addEventListener('click', () => this.returnToDoor());
@@ -40,13 +38,12 @@ class CoralinePortal {
     if (this.isUnlocked) return;
     this.isUnlocked = true;
 
-    // Ses efektlerini çal
     if (window.coralineAudio) {
       window.coralineAudio.playKeyUnlockSound();
-      setTimeout(() => window.coralineAudio.playDoorCreakSound(), 250);
+      setTimeout(() => window.coralineAudio.playDoorCreakSound(), 350);
     }
 
-    // Anahtar animasyonu: deliğe girip dönme
+    // 360 derece dönerek deliğe girme animasyonu
     this.keyElement.classList.add('key-inserting');
     if (this.keyHint) {
       this.keyHint.textContent = "Kapı aralanıyor... Diğer Dünyaya geçiliyor!";
@@ -55,12 +52,11 @@ class CoralinePortal {
     setTimeout(() => {
       this.doorElement.classList.add('door-opening');
       this.vortexTunnel.classList.add('vortex-active');
-    }, 450);
+    }, 600);
 
-    // Vortex tünelinden evrene giriş
     setTimeout(() => {
       this.enterMainUniverse();
-    }, 1800);
+    }, 2200);
   }
 
   enterMainUniverse() {
@@ -68,7 +64,6 @@ class CoralinePortal {
     this.mainUniverse.classList.remove('universe-hidden');
     this.mainUniverse.classList.add('universe-visible');
 
-    // Müziği otomatik başlat
     if (window.coralineAudio && !window.coralineAudio.isPlaying) {
       window.coralineAudio.toggleMusic((playing) => {
         const musicBtn = document.getElementById('music-toggle-btn');
@@ -79,9 +74,9 @@ class CoralinePortal {
       });
     }
 
-    // İplik ve dikiş efektini tetikle
-    if (window.coralineGallery) {
-      window.coralineGallery.drawThread();
+    // Harita Leaflet boyutunu tazele
+    if (window.coralineMap && window.coralineMap.map) {
+      setTimeout(() => window.coralineMap.map.invalidateSize(), 300);
     }
   }
 

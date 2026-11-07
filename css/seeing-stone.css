@@ -1,0 +1,130 @@
+/* ============================================================
+   CORALINE GÖREN TAŞ (SEEING STONE) STİLLERİ
+   Demir Kafes Uyumlu - Max 300 Satır
+   ============================================================ */
+
+/* Gören Taş Lens İmleci */
+.seeing-stone-cursor {
+  position: fixed;
+  width: 140px;
+  height: 140px;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  display: none;
+  filter: drop-shadow(0 0 25px rgba(57, 255, 20, 0.75));
+  transition: transform 0.08s ease-out;
+}
+
+body.seeing-stone-active .seeing-stone-cursor {
+  display: block;
+}
+
+/* Gören Taş SVG Şekli */
+.seeing-stone-svg {
+  width: 100%;
+  height: 100%;
+  animation: stoneFloat 4s ease-in-out infinite alternate;
+}
+
+@keyframes stoneFloat {
+  0% { transform: rotate(-3deg) scale(1); }
+  100% { transform: rotate(3deg) scale(1.05); }
+}
+
+/* Gören Taş Mercek Bölgesi */
+.seeing-stone-lens {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 48px;
+  height: 48px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(57, 255, 20, 0.25) 0%, rgba(0, 243, 255, 0.4) 70%, transparent 100%);
+  box-shadow: inset 0 0 15px #39ff14, 0 0 20px #00f3ff;
+  mix-blend-mode: screen;
+}
+
+/* Fotoğraflardaki Gizli Coraline Sembolleri & Mesajları */
+.secret-rune-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  background: radial-gradient(circle, rgba(12, 35, 24, 0.85) 0%, rgba(8, 7, 17, 0.92) 80%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 2px;
+  z-index: 15;
+  text-align: center;
+}
+
+/* Gören Taş Modu Açıkken Kartın Üzerine Gelindiğinde Ortaya Çıkar */
+body.seeing-stone-active .polaroid-card:hover .secret-rune-overlay,
+.secret-rune-overlay.revealed {
+  opacity: 1;
+}
+
+.secret-rune-icon {
+  font-size: 2.8rem;
+  color: #39ff14;
+  text-shadow: 0 0 20px #39ff14, 0 0 35px #00f3ff;
+  animation: runePulse 2s infinite ease-in-out;
+  margin-bottom: 8px;
+}
+
+@keyframes runePulse {
+  0%, 100% { transform: scale(1); filter: brightness(1); }
+  50% { transform: scale(1.15); filter: brightness(1.4); }
+}
+
+.secret-rune-note {
+  font-family: var(--coraline-font-body);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: #eaffea;
+  text-shadow: 0 0 10px rgba(57, 255, 20, 0.7);
+  line-height: 1.4;
+}
+
+.secret-rune-tag {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #39ff14;
+  border: 1px solid #39ff14;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+/* Mobil Gören Taş İpucu Çubuğu */
+.seeing-stone-banner {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  background: rgba(14, 28, 18, 0.95);
+  border: 1px solid #39ff14;
+  color: #eaffea;
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  box-shadow: 0 0 25px rgba(57, 255, 20, 0.45);
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.4s ease;
+  pointer-events: none;
+}
+
+body.seeing-stone-active .seeing-stone-banner {
+  transform: translateX(-50%) translateY(0);
+}

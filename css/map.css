@@ -1,0 +1,178 @@
+/* ============================================================
+   CORALINE GECE HARİTASI (AŞKIMIZIN COĞRAFYASI)
+   Demir Kafes Uyumlu - Max 300 Satır
+   ============================================================ */
+
+.love-map-section {
+  max-width: 1300px;
+  margin: 60px auto 40px;
+  padding: 0 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.map-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.map-title {
+  font-family: var(--coraline-font-title);
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  color: #fff;
+  text-shadow: 0 0 15px var(--portal-cyan), 0 0 30px var(--portal-pink);
+  margin-bottom: 8px;
+}
+
+.map-subtitle {
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--text-muted);
+}
+
+.map-quick-bar {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.map-chip {
+  background: rgba(18, 16, 32, 0.85);
+  border: 1px solid rgba(0, 243, 255, 0.35);
+  color: var(--portal-cyan);
+  padding: 6px 14px;
+  border-radius: 16px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.map-chip:hover {
+  background: rgba(0, 243, 255, 0.2);
+  border-color: var(--portal-pink);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(224, 40, 117, 0.4);
+}
+
+/* Harita Çerçevesi */
+.map-frame {
+  position: relative;
+  height: 480px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 2px solid var(--portal-cyan);
+  box-shadow: 0 0 35px rgba(0, 243, 255, 0.25), 0 15px 40px rgba(0, 0, 0, 0.9);
+  background: #080711;
+}
+
+#coraline-map {
+  width: 100%;
+  height: 100%;
+  background: #080711;
+}
+
+/* Coraline Düğme Harita Pini */
+.map-button-pin {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #2a2238, #090710);
+  border: 2px solid var(--portal-pink);
+  box-shadow: 0 0 12px var(--portal-pink), 0 3px 6px rgba(0, 0, 0, 0.8);
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map-button-pin:hover {
+  transform: scale(1.35);
+  border-color: var(--portal-cyan);
+  box-shadow: 0 0 20px var(--portal-cyan);
+  z-index: 999;
+}
+
+.pin-hole-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3px;
+}
+
+.pin-hole {
+  width: 3.5px;
+  height: 3.5px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 4px #00f3ff;
+}
+
+/* Leaflet Popup Özelleştirme */
+.leaflet-popup-content-wrapper {
+  background: #141124 !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--portal-cyan) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 0 25px rgba(0, 243, 255, 0.4) !important;
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.leaflet-popup-tip {
+  background: #141124 !important;
+  border: 1px solid var(--portal-cyan) !important;
+}
+
+.map-popup-card {
+  padding: 12px;
+  max-width: 250px;
+}
+
+.map-popup-thumb {
+  width: 100%;
+  height: 125px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.map-popup-title {
+  font-family: var(--coraline-font-title);
+  font-size: 0.95rem;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.map-popup-meta {
+  font-size: 0.75rem;
+  color: var(--portal-cyan);
+  margin-bottom: 6px;
+}
+
+.map-popup-note {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #e2d9f3;
+  line-height: 1.35;
+  margin-bottom: 8px;
+}
+
+.map-popup-btn {
+  background: var(--portal-pink);
+  border: none;
+  color: #fff;
+  width: 100%;
+  padding: 6px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  font-family: var(--coraline-font-title);
+}
+
+@media (max-width: 768px) {
+  .map-frame { height: 360px; }
+}

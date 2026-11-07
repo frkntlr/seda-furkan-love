@@ -1,0 +1,78 @@
+/* ============================================================
+   CORALINE DÜĞME GÖZLER (4 Delikli & Dikişli İllüzyon)
+   Demir Kafes Uyumlu - Max 300 Satır
+   ============================================================ */
+
+.button-eyes-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 10;
+}
+body.button-eyes-active .button-eyes-overlay { opacity: 1; }
+
+.coraline-button-eye {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  transform: translate(-50%, -50%);
+  animation: coralineEyeBlink 4.5s infinite ease-in-out;
+}
+
+@keyframes coralineEyeBlink {
+  0%, 88%, 100% { transform: translate(-50%, -50%) scale(1); }
+  92% { transform: translate(-50%, -50%) scaleY(0.12); }
+  96% { transform: translate(-50%, -50%) scale(1.1); }
+}
+
+.button-eye-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #2a2538 0%, #0d0c14 75%, #000 100%);
+  border: 2.5px solid var(--portal-cyan);
+  box-shadow: 0 0 14px var(--portal-cyan), 0 0 25px var(--portal-pink), inset 0 0 6px #000;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 4 Düğme Deliği */
+.b-hole {
+  position: absolute;
+  width: 3.5px;
+  height: 3.5px;
+  background: #000;
+  border-radius: 50%;
+  box-shadow: inset 0 0 2px #fff;
+}
+.b-hole.h1 { top: 9px; left: 9px; }
+.b-hole.h2 { top: 9px; right: 9px; }
+.b-hole.h3 { bottom: 9px; left: 9px; }
+.b-hole.h4 { bottom: 9px; right: 9px; }
+
+/* Altın Çapraz Dikiş İpi */
+.thread-cross {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+}
+.thread-cross::before, .thread-cross::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 12px;
+  height: 1.5px;
+  background: var(--portal-gold);
+  box-shadow: 0 0 4px var(--portal-gold);
+}
+.thread-cross::before { transform: rotate(45deg); }
+.thread-cross::after { transform: rotate(-45deg); }
+
+@media (max-width: 768px) {
+  .coraline-button-eye { width: 26px; height: 26px; }
+}
